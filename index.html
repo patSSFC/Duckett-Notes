@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>The Beginning of the Beginning</title>
+		<meta name="description" content="A Code Fellows Pre-Study Page" />
+		<meta name="keywords" content="Jon Duckett, HTML&CSSbook, self-study, notes" />
+		<meta name="robots" content="no-follow" />
+		<meta http-equiv="author" content="Pat Yolian" />
+		
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<!-- Disable no-cache and expiration date
+		<meta http-equiv="pragma" content="no-cache" /> 
+		<meta http-equiv="expires" content="Sun, 22 Nov 2015 23:59:59 GMT" />
+		-->
+		<!-- Yay!! -->
+		<!--
+		<script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script type="text/javascript">
+			swfobject.embedSWF("flash/bird.swf","example", "400", "300", "8.0.0");
+		</script>
+		
+			<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script> 
+		<script type="text/javascript">
+			var flashvars = {};
+			var params = {movie:"../video/barsandtone.flv"};
+			swfobject.embedSWF("flash/osplayer.swf", "snow", "400", "345", "8.0.0", flashvars, params);
+			</script>
+			
+		<script type="text/javascript">
+			var flashvars = {};
+			var params = {mp3: "audio/test-audio.mp3"};
+			swfobject.embedSWF("flash/player_mp3_1.0.0.swf", "audioTest", "200", "20", "8.0.0", flashvars, params);</script>
+		-->
+		
+		<script type="text/javascript" src="swfobject/swfobject.js"></script>
+		<script type="text/javascript">
+			var flashvars = {};
+			var param = {movie:"../video/puppy.flv"};
+			swfobject.embedSWF("flash/osplayer.swf", "practiceSnow", "400", "300", "8.0.0", flashvars, param);
+		</script>
+	</head>
+	
+	<body>
+		<h1 class="fixedBanner">HTML/CSS by Jon Duckett, Study Notes</h1>
+		
+		<ul id="top" class="tableOfContents">
+			<li><a href="#chp2">Text</a></li>
+			<li><a href="#chp3">Lists</a></li>
+			<li><a href="#chp4">Links</a></li>
+			<li><a href="#chp5">Images</a></li>
+			<li><a href="#chp6">Tables</a></li>
+			<li><a href="#chp7">Forms</a></li>
+			<li><a href="#chp8">Extra Markup</a></li>
+			<li><a href="#chp9">Flash, Video & Audio(Practice!!)</a></li>
+			<li><a href="#chp10">Introducing CSS</a></li>
+			<li><a href="#chp11">Color</a></li>
+			<li><a href="#chp12">Text</a></li>
+			<li><a href="#chp13">Boxes</a></li>
+			<li><a href="#chp14">List, Tables, and Forms</a></li>
+			<li><a href="#chp15">Layout</a></li>
+		</ul>
+		
+	<h1>Part 1: HTML</h1>
+		<h2 id="chp2">Chapter 2: Text</h2>
+		<p>Anything within the body is included on the webpage itself. you probably cant see the title on the page because it is actually located on the top of th ebrowser!</p>
+		
+		<h3>Some tags that alter text</h3>
+		<p>Man, this has been some serious <b>shit</b>. Ever since <i>HMS XYZ</i> flew in we've been screwed</p>
+		<p>This is the N<sup>th</sup> time I've told you this. Stop breathing in all that CO<sub>2</sub>.</p>	
+		<p>Web browsers ignore     all the extra          spaces in html files         so developers take advantage of this     to make     code easier to read.  <b>See? <i>No spaces!</i></b></p>
+		
+		<h3>Gimme dat white space...</h3>
+		<p>There once was a page<br /> that didn't have white space <br /> so we broke it up  <br />using<br /> line breaks </p>
+		<hr />
+		<p>Where did that line come from?? Oh... a horizontal rule.  Don't forget that line breaks and horizontal rules are empty elements so they close themselves</p>
+	
+		<h3>Semantic Markup</h3>
+		<p>Some text elements are not inteded to affect the structure of webpages but they do add extra information to the pages.This is known as <b>semantic markup</b></p>
+		<p>Semantic Markup can often be interchanged with other tags but that does not always serve the same function.</p>
+		<p>Semantic Markup is used by screen readers to add emphasiss while reading the content outloud while adding italics tag would not achieve that</p>
+	
+		<h3>Strong and Emphasis</h3>
+		<p>use of Strong indicates that its content has <strong>strong importance</strong>. Words contained in element would be read with a heavy emphasis.By defautl strong is shown as bold.</p>
+		<p>Emphasis indicates <em>subtle</em> changes in the meaning of a sentence</p>
+		<p>Emphasis indicates subtle <em>changes</em> in the meaning of a sentence</p>
+		<p>Emphasis indicates subtle changes in the <em>meaning</em> of a sentence Again, this would only be eveident to a screen reader</p>	
+	
+		<h3>Quotations</h3>
+		<p>Two elements are commonly used for marking up quotes: <b>blockquote</b> and <b>q</b></p>
+		<blockquote cite="http://www.nytimes.com/2015/11/15/world/europe/paris-terror-attacks-a-display-of-absolute-barbarity.html?ribbon-ad-idx=5&rref=world/europe&module=Ribbon&version=context&region=Header&action=click&contentCollection=Europe&pgtype=article"><p> He had gone there to see the Eagles of Death Metal, a hard-driving band from California. He went alone because his girlfriend, who dislikes noisy music, spurned his offer of a date. The band had played around five songs and the audience was already warmed up when a series of loud bangs echoed around the 19th-century concert hall on Boulevard Voltaire in central Paris.</p></blockquote>
+		<p>The above is an example of a blockquote.  It is used for longer quotes that take up an entire paragraph. Note how the paragraph element is still used inside a blockquote.
+		<p>The book I'm reading right now that <q>The &lt;q&gt; element is used for shorter quotes</q> that sit within a paragraph  Both elements <i>may</i> use the cite atrribute to indicate where the quote is from.</p>	
+		
+		<h3>Abbrviations and Acronyms</h3>
+		<p>If you use an abbreviation like <abbr title= "element">ele</abbr> or an acronym like <abbr title= "Seattle Sounders Football Club">SSFC</abbr> then you would use the abbr tag. Hovering over the works content inside the abbr tag shows a tooltip showing the full term.The <i>title</i> attribute is used to specify the full term</p>
+	
+		<h3>Citations and Definitions</h3>
+		<p>When you are referencing a piece of work <q>such as a book, film, or research paper</q>  the cite element is used to indicate where the citation is created</p>
+		<p><cite>Operation Nemesis: The Assassinatin Plot that Avenged the Armenian Genocide</cite> is an awesome book and informed me a lot about the policital environement in which the Genocide took place</p>
+		<p> A <dfn>Genocide</dfn> is the systematic erradication of one group of people by another The dfn tag is used the first time you explain some new terminology</p>
+	
+		<h3>Author Details</h3>
+		<p>The address element is used for a specific purpose: to contain contact details for the author of the page.</p>
+		<address>
+			<p><a href="mailto:pyolian@gmail.com">
+				pyolian@gmail.com</a>
+			</p>
+			<p>4706 8tg Ave NE</p>
+		</address>
+	
+		<h3>changes to content</h3>
+		<p>ins element can be used to show content that has been interted into a document, while del elements show text that has been deleted.</p>
+		<p>Man, I had no idea you <del>hated</del> <ins>loved</ins> your job so much!</p>
+		<p> Price: <s>$1200</s> Price after once-a-year sale: $1199 Buy Now!! strikethrough indicates that something that is no longer accurute or relelvent but should not be deleted.</p>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id ="chp3">Chapter 3: Lists</h2>
+	
+		<h3>orderedlists</h3>
+		<p>orderedlists are numbered lists, such as used to represent step by step procedure</p>
+		<ol>
+			<li>Self Study HTML/CSS/JavaScript</li>
+			<li>Create two live websites</li>
+			<li>Pass Code Challenges and test into 401</li>
+			<li>Graduate from Code Fellows</li>
+			<li>Get a Dope Job</li>
+		</ol>
+		<p> sometimes you may see an attribute of type 'numbering' to specify numbers, letters, roman nums, etc. But a better practice is to designate that propery in CSS since it realtes to style not content</p>
+		
+		<h3>unordered lists</h3>
+			<p>for lists that are, you guessed it!, unordered...</p>
+			<ul>
+				<li>Cheese</li>
+				<li>Asteroid</li>
+				<li>lip balm</li>
+			</ul>
+	
+		<h3>definition lists</h3>
+			<p>created using the dl tag and ususally consists of a series of terms and their definitions, like a dictionary!</p>
+			<dl>
+				<dt>Definitions</dt>
+				<dd>The meaning of a word</dd>
+				<dt>Meaning</dt>
+				<dd>the definition of a word</dd>
+			</dl>
+	
+		<h3>Nested Lists</h3>
+		<p>You can put a second list inside an li element to create a sublist In nested unordered lists, browser changes the style of bullet.</p>
+		<ul>
+			<li>thing</li>
+			<li>things
+				<ul>
+					<li>thing</li>
+					<li>thing</li>
+				</ul>
+			</li>
+			<li>thing</li>
+		</ul>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp4">Chapter 4: Links</h2>
+	
+	<h3>Writing Links</h3>
+	<p>
+		<b>You Always Create links using the &lt;a&gt; tag and the href attribute.</b> Anything inside the tags, the user can click on. Have a question?
+		<a href="http://www.google.com">Google it.</a>
+		</p>
+		<p>
+		Text between the opening of a tags is known as <i>link text</i>. Link text should describe the location where the user will be taken as opposed to "click here" 		
+
+	</p>
+	
+	<h3>Linking to other sites</h3>
+	<p>
+		When you link to a different website, the URL in the href attribute will be the full web address for the site AKA the <b>absolute URL</b>.
+	</p>
+	
+	<h3>Linking to other pages on the same site/dir</h3>
+	<p>
+		When you link to pages within the same site, you do not need to specify the domain name in the URL.  Can use shorthand known as a <b>relative URL</b>. 
+		If all the files of a web page are within the same folder/dir then the href <abbr title= "attribute">attrb</abbr> is simply the name of the file. 	<img src="./images/tomandtim.png" alt="A picture of two best friends, Tom Tebow and Tim Brady" />
+	</p>
+
+	<h3>Opening Links in a New Window</h3>
+	<p>
+		To open a link in a new window, you must use a new attrib called 'target'.  To open in a new windows the value must be set to '_blank'.  Most common reason to open a link in a new window is if the link is referring to an external web page.
+		<a href="http://www.espn.go.com" target="_blank">The World Leader!</a>
+	</p>	
+
+	<h3>Email Links</h3>
+	<p>To create a link that starts up the users email program you use the &lt;a&gt; tag using the 'href' attribute. However the href attrib would begin with 'mailto:'</p>
+	<p>
+		<a href="mailto:abcd123@hotmail.com">Click here to send an email to a bogus address!!</a>
+	</p>
+	
+	<h3>Linking to a Specific Part of the Same Page</h3>
+	<p>
+		At the top of a loong page, you may want to add of list of contents that links to the corresponding section lower down on the page.  Or vice versa, going from somewhere down below back to the top.  Before you can link to a specific part of a page, you must identify the sections that the link will lead to. This is done using the <b>id</b> attribute.	
+	</p>
+	
+	<p>
+		The <b>id</b> attribute can be used for every HTML element. Value of <b>id</b> should either start with a letter or an underscore (not a number or some othe character). And <i>no two id's should have the same value</i>
+	</p>
+	
+	<p>
+		To link to an element that uses the id attrb, you use the &lt;a&gt; tags with the value of the href attrib set to the value of the id attrib associated with the section you wish to link to.  The value of the href must start with the # symbol and then the value of the id attrib.
+	</p>
+	
+	<h3>Linking to a Specific Part of <i>Another</i> page</h3>
+	
+	<p>
+		If you want to link to a specific part of a different web page, you would use a similar technique as linking to one within your site. As long as the page you are linking to uses the id attribute you can simply add the same syntax to the end of the link for that page.
+		<a href="http://www.w3.org/standards/#w3c_footer">W3C Footer?</a>
+	</p>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp5">Chapter 5: Images</h2>
+	
+	<h3>Choosing Images for Your Site</h3>
+	
+	<p>
+		Images can be used to set the tone of a page or display a product, logo, banner, etc. If you do not have photographs, you may buy some from companies who sell <b>stock images</b>, images that you pay to use. All images are subject to copyright and cannot simply take photos from another site.	
+	</p>
+	
+	<p>
+		Images should:
+	</p>
+		<ul>
+			<li>Be Relevant</li>
+			<li>Convey Information</li>
+			<li>Convey the right mood(??)</li>
+			<li>Be instantly recognizable</li>
+			<li>Fit the color palette</li>
+		</ul>
+	
+
+	<p>
+		It's a good practice to keep your images in a seperate folder, to better understand how the site is organized.
+	</p>
+	
+	<h3>Adding Images</h3>
+	
+	<p>
+		To add an image to a web page you must use the &lt;img&gt; element.  It is an empty element which means it closes itself.  It must carry the following two attributes:
+		<dl>
+			<dt>src</dt>
+				<dd>Tells the browser where it can find the image file.  This will usually be a relative URL pointing to an image on your own site.</dd>
+			<dt>alt</dt>
+				<dd>Provides a text description of the image which describes the image if you cannot see it AKA as <b>alt text</b>. It should give an accurate description of the image context so it can be understood by screen reader software and search engines</dd>
+			<dt>title (Optional)</dt>
+				<dd>A text description that is shown as a tooltip when a user moust hovers over the image.</dd>
+		</dl>
+		You can also set the height and width of the image by using the 'height' and 'width' attributes. Images often take longer to load than HTML code that makes up the rest of the page. Therefore it is a good idea to specify the size of the image so the browzer can render the rest of the text on the page while leaving the right amount of space for the image that is still loading. <sub>size of images is increasingly being specified using CSS rather than HTML</sub>
+	</p>
+	
+	<h3>Where to Place Images in Your Code</h3>
+
+	<p>	
+		<img src="images/seattle-seahawks-logo.png" alt="seattle seahawks logo" />
+	</p>
+	<p>
+		Where you insert the &lt;img&gt; element within another element, such as a paragraph, will dictate <img src="images/seattle-seahawks-logo.png" alt="seahawks logo" /> where it shows up on the web page. Because the &lt;img&gt; element is an inline element it <ins>always</ins> sits within a block element and does not start on a new line.
+		<img src="images/seattle-seahawks-logo.png" alt="seahawks logo" />
+	</p>
+
+	<h3>Three Rules for Creaeting Images</h3>
+	
+	<p><b>Save the Image in the Right Format:</b>Websites mainly use images in the JPEG, GIF, or PNG format. If you use the wrong image format your image may look not as sharp and make the web page load slow.</p>
+	
+	<p><b>Save Images at the Right Size:</b>You should be saving the image to your file system at the same size as it will appear on your website (measured in pixels). If the image is larger on your site than the w/h it is saved at, the image will be enlarged and distorted. If it is smaller on your page than what it is saved at, it will take longer for the image to load</p>
+	
+	<p><b>Measure Images in Pixels!!</b>Don't use CM or Inches since computers don't fuck with that</p>
+	
+	<h4>Image Formats</h4>
+	
+	<dl>
+		<dt>JPEG</dt>
+			<dd>Whenever you have a pciture with many different colors, you should use a JPEG.</dd>
+		<dt>GIF/PNG</dt>
+			<dd>When saving a picture with few colors, such as a logo or diagram, use a GIF/PNG</dd>
+	</dl>
+	
+	<h3>Figure and Figure Caption</h3>
+	
+	<p>
+		HTML5 has introduced a new element, &lt;figure&gt;. This is used to directly associate a picture with a caption, like in textbooks. You may have many figures inside a single element, as long as they share the same caption.
+	</p>
+	
+	<p>
+		The &lt;figcaption&gt; element is used in conjunction with the figure element and is used so an webpage author can make their own description.
+	</p>
+	
+	<figure>
+		<img src="images/ATCQ.jpg" alt="Picture of A Tribe Called Quest" />
+		<figcaption>A Tribe Called Quest, seen here, hanging out in their neighborhood on Lynden Boulevard.</figcaption>
+	</figure>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id = "chp6">Chapter 6: Tables</h2>
+	
+	<h3>What's a Table?? L0L</h3>
+	
+	<p>
+		A table repsents information in a grid format. Grids allows us to understand complex info by referencing info on two axes. Each block in the grid is reffered to as a <b>table cell</b>
+	</p>
+	
+	<h3>Basic Table Structure</h3>
+	
+	<p>
+		The &lt;table&gt; element is used to create a table.  Contents of the table are written out row by row
+	</p>
+	
+	<p>
+		Indicate the start of each row by using the &lt;tr&gt; tag (table row).  Inside the &lt;tr&gt; element are &lt;td&gt; tags.  These are the tags that will hold the data in each tabel cell.
+	</p>
+	
+	<table>
+		<tr>
+			<td>35</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>13</td>
+		</tr>
+	</table>
+	
+	<p>
+		The &lt;th&gt; element is used like the &lt;td&gt; element but its purpose is to represent headings for rows and columns. &lt;th&gt; has an attribute named 'scope' that takes 'col' or 'row' as a value to indicate whether the heading is for a row or a column. Even if a cell has no content you should still use a td or th element to represent an empty cell <sub>Refer to tables on pg 131-132 to see why you'd have a blank cell. Or just comment out the blank &lt;th&gt; below...</sub>
+	</p>
+	
+	<table>
+		<tr>
+			<th></th>
+			<th scope = "column">X</th>
+			<th scope = "column">Y</th>
+		</tr>
+		<tr>
+			<th scope = "row">A</th>
+			<td>35</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<th scope = "row">A</th>
+			<td>35</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<th scope = "row">A</th>
+			<td>35</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<th scope = "row">A</th>
+			<td>35</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<th scope = "row">A</th>
+			<td>35</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<th scope = "row">B</th>
+			<td>12</td>
+			<td>13</td>
+		</tr>
+	</table>
+	
+	<p>
+		Using &lt;th&gt; elements for headings helps people who use screen reading programs figure out what is in the table, improves the ability of search engines to index your page, and also gives you greater control over table design when you use CSS.
+	</p>
+	
+	<h3>Spanning Columns/Rows</h3>
+	
+	<p>
+		Sometimes you need entries to stretch across multiple cells in a column.  In such a case you would need to use the 'colspan' (if spanning a column) or 'rowspan' (if spanning a row) attributes of &lt;th&gt; or &lt;td&gt;
+	</p>
+	
+	<table>
+		<tr>
+			<th></th>
+			<th scope = "col">Y</th>
+			<th scope = "col">Z</th>
+		</tr>
+		<tr>
+			<td colspan = "2">1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+	</table>
+	
+	<h3><abbr title="Review This one...and Tables too. Cause you kinda suck at making tables">Long Tables</h3>
+	
+	<p>
+		There are three element that help distinguish between the main cells in the table and the first and last rows (which can contain different information).  These elements help people who use screen readers and also allow you to style the sections using CSS
+	</p>
+	
+	<p>
+		The column headings should sit inside of the &lt;thead&gt; element.<br />
+		The body of the table should sit inside &lt;tbody&gt; element<br />
+		The footer belongs inside the &lt;tfoot&gt; element.
+	</p>
+	
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th scope = "column">X</th>
+				<th scope = "column">Y</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope = "row">A</th>
+				<td>35</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th scope = "row">A</th>
+				<td>35</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th scope = "row">A</th>
+				<td>35</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th scope = "row">A</th>
+				<td>35</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th scope = "row">A</th>
+				<td>35</td>
+				<td>25</td>
+			</tr>
+			<tr>
+				<th scope = "row">B</th>
+				<td>12</td>
+				<td>13</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td>N<sub>1</sub></td>
+				<td>N<sub>2</sub></td>
+			</tr>
+		</tfoot>
+	</table>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp7">Chapter: Forms(!!!)</h2>
+	
+	<p>
+		HTML borrows the concept of a form to refer to different elements that allow you to collect information from visitors to your site.  They are used for a whole ton of things (which you've already come across...skip the filler!!)
+	</p>
+	
+	<h3>How Forms Work</h3>
+	
+	<ol>
+		<li>A user fills in a form and then presses a button to submit the info to a server</li>
+		<li>The name of each form control is sent to the server along with the value the user enters or selects</li>
+		<li>The server processes the information using a programming language like PHP, C#, VB.net or Java.  It may also store the info into a <abbr title="Database">Database</abbr></li>
+		<li>The server creates a new page to send back to the browser base on the information received</li>
+	</ol>
+	
+	<p>
+		It is important to give each form a unique identifier so the server can differentiate between the different types of input that the user is submitting.  These are called <b>name/value pairs</b>.
+	</p>
+	
+	
+	<h3><abbr title="review: you kept forgetting set 'action' attrib">Form Structure</abbr></h3>
+	<p>
+		Forms live inside the &lt;form&gt; element.  <em>This element should always carry the <b>'action'</b> attribute</em> and will usually also include the 'method' and 'id' attribute as well.
+	</p>
+	
+	<p>
+		Every form requires the action attribute.  It's value is the URL for the page on the server that will receive the information when it is submitted.
+	</p>
+	<p>
+		Forms can be sent using one of two methods: 'get' or 'post'.  The 'get' method add the values from the forms to the end of the URL specified in 'action'.  'get' is ideal for short forms (such as search boxes) or when you are just retrieving data from the web server (not sending data that should be added or deleted from a DB)
+	</p>
+	<p>
+		With the 'post' method, the values are sent in what are known as <b>HTTP Headers</b>. As a rule of thumb, you should use the 'post' method if your form: allows users to upload a file, is very long, contains sensitive data (passwords), adds info or deles info from a DB.
+		If 'method' is not set then default is get.
+	</p>
+	
+	<p>
+		'id' attribute is looked at in more detail on pg. 183 but the value is used to identify the form distinctly from other elements or forms on the page.  And is used by scripts to validate fields in forms.
+	</p>
+	
+	<h3>Text Input</h3>
+	
+	<p>
+		The &lt;input&gt; element is used to create several different form types.  The value of the 'type' attribute determines what kind of input it will create. &lt;input&gt; is an empty element.
+	</p>
+	
+	<p>
+		When the 'type' attrib is set to 'text', it creates a single-line text input.  Again, the server needs to know which form controls each piece of data it receives.  <b>Therefore, every form control requires a 'name' attribute.</b> This name value is sent to the server along with the associated data.
+	</p>
+	
+	<form action="http://www.example.com/login.php">
+		<fieldset>
+			<p>
+			username:
+			<input type="text" name="firstText" maxlength="100"  />
+			</p>
+		</fieldset>
+	</form>
+	
+	<h3>Password Input</h3>
+	
+	<p>
+		When the 'type' attrib for an input element is set to 'password' it creates a single-text box just like before, except the characters are blocked out. It carries the attributes as the last example: name, size, and maxlength. <b>Although the password is hidden from users, it does not mean the data within the input type of 'password' is sent securely.  It should never be used to send sensitive data.  For full security, the server needs to be able to communicate using SSL, which is beyond the scope of this book :( </b>
+	</p>
+	
+	<form action="http://www.example.com/login.php">
+		<p>Please enter your password:<br />
+			<input type="password" name="pwForm" />
+		</p>
+	</form>
+	
+	<h3>Text Area</h3>
+	
+	<p>
+		The &lt;textarea&gt; element is used to create a multi-line text input.  Unlike other input elements <b>it is not an empty element</b> so it has a closing tag.  Any text that appears inside the textarea element will be displayed in the text box when the page loads. If the user doesn't delete that text then it is sent to the serve as well as whatever they type (will learn how to clear it when I get bawlz deep into JavaScript...CANT WAIT)
+	</p>
+	
+	<form action="http://www.example.com/login.php">
+		<p>
+			How excited/frightened are you to start your path to becoming a developer?
+		<p>
+		<textarea>I'm as excited as I am frigthened...but the type of fear that motivates, not debilitates.</textarea>
+	</form>
+	
+	<h3>Radio Buttons</h3>
+	
+	<p>
+		When you set the type attrib of an &lt;input&gt; element to 'radio' you can allow users to pick a number of options using clickable buttons.
+	</p>
+	
+	<p>
+		The 'name' attribute is sent to the server with the value the user selects, same as usual...BUT! When a question provides users with options in the form of radio buttons, the value of the 'name' attribute should be the same for all of the radio buttons used to answer that question.
+	</p>
+	
+	<p>
+		The 'value' attribute indicates the value that will be sent to the server. The value should all be different.
+	</p>
+	
+	<p>
+		The 'checked' attribute can be used to dicate whic value (if any) should be selected when the page initially loads.  The value should be set to 'checked'. Only one option of a group should use this, if neccessary.  
+	</p>
+	
+	<form action="http://www.example.com/login.php">
+		<p>
+			Who is the Greatest Rapper of All-Time?<br />
+			<input type="radio" name="goat" value="Tupac Shakur" /> Tupac Shakur
+			<input type="radio" name="goat" value="Notorious B.I.G." />Notorious B.I.G.
+			<input type="radio" name="goat" value="Rakim" />Rakim
+			<input type="radio" name="goat" value="dEYElawn" checked="checked" />dEYElawn
+			<input type="radio" name="goat" value="Kanye West" />Kanye West
+		</p>
+	</form>
+	
+	<h3>Checkbox</h3>
+	
+	<p>
+		Pretty much the same exact syntax as Radio buttons except type attrib of input element would be set to 'checkbox'. Difference between radio and checkbox is that once you select a radio button, you cannot deselect, only change your answer. With checkbox you can select/deselect.
+	</p>
+	
+	<form action="http://www.example.com/login.php">
+		<p>
+			Select the Best Three Players on the Sounders, as of right now:<br />
+			<input type="checkbox" name="best" value="Deuce" />Deuce
+			<input type="checkbox" name="best" value="Chad Marshall" /> Chad Marshall
+			<input type="checkbox" name="best" value="Ozzie" />Ozzie
+		</p>
+	</form>
+	
+	<h3>Drop Down List Box</h3>
+	
+	<p>
+		A drop down list AKA a select box allows users to select one option from a drop down list.  The <b>&lt;select&gt;</b> element is used to create a drop down box.  The 'name' attribute indicates the name of the form control sent to the server
+	</p>
+	
+	
+	<p>
+		Each &lt;select&gt; element, must also contain two or more &lt;option&gt; elements.  This element is nested within the select element and has it's own set of attributes. 'value' is the attribute that indicates the value that should be sent to the server, along with the 'name' attribute from the &lt;select&gt; element. 'selected' behaves the same way as 'checked' does for radio buttons and check boxes    
+	</p>
+	<form action="http://www.example.com/login.php">
+			<p>Please choose one from the following drop down menu:</p>
+			<select name="rgbTest">
+				<option value="Red">Red</option>
+				<option value="Green">Green</option>
+				<option value="Blue">Blue</option>
+			</select>
+		
+	</form>
+	
+	<p>Dropdown menu works the same as radio buttons in that once you select an option, you cannot deselect it. Only changing your answer is allowed.  Two key factors in choosing which to use: if you need the user to see all the options at a glance, use radio buttons.  If their are a lot of options, such as countries, then use a dropdown menu.</p>
+	
+	<h4>Multiple Select Box</h4>
+	
+	<p>
+		A drop down select box can be turned into a box that shows more than one option by add the 'size' attribute.  It's value should be the number of options you want to show at once. You can also allow users to select multiple options from the list by adding the 'multiple' attribute and settings its value to 'multiple'
+	</p>
+	
+	<form action="http://www.example.com/login.php">
+			<p>Do you root for any of the following teams? If so, please select the teams which you root for.  (You can select more than one if you are a bandwagon fan.)</p>
+			<select name="nflRoot" size="3" multiple="multiple">
+				<option value="49ers">49ers</option>
+				<option value="Rams">Rams</option>
+				<option value="Cardinals">Cardinals</option>
+				<option value="Steelers">Steelers</option>
+				<option value="Patriots">Patriots</option>
+			</select>
+	</form>
+	
+	<h3>File Input Box</h3>
+	
+	<p>
+		If users want to upload a file, you will need to create a file input box.  To create one you must set the attribute 'type' in the input element to 'file'. Also, <b>when uploading a file, the 'method' attribute for the form element must be set to 'post'</b>
+	</p>
+	
+	<form action="http://www.example.com/login.php" method="post">
+		<p>Upload your file to patBox: </p>
+		<input type="file" name="uploadForm" />
+	</form>
+	
+	<p><b>But how do you submit the file?? There is no button...</b></p>
+	
+	<h3>Submit Button</h3>
+	
+	<p>
+		When you change the value of the 'type' attribute of the &lt;input&gt; element to 'submit', you will create a button that sends info to a server. 
+	</p>
+	
+	<p>
+		'name' attribute does the same thing it's been doing this whole chapter <i>but it doesn't actually need one</i>. 'value' attribute sets the text for inside the button
+	</p>
+	
+	<form action="http://www.example.com/upload.php" method="post">
+		<p>Upload your file to patBox: </p>
+		<input type="file" name="uploadForm" />
+		<input type="submit" />
+	</form>
+	
+	<h4>Image Button</h4>
+	
+	<p>
+		When you want a particular image on the submit button instead of just plain text, you would just need to change the value of attribute 'type' for the &lt;input&gt; elelment to 'image'.  You would use the src and alt attributes in the input element just the same as you would if it was an img element
+	</p>
+	
+	<form action="http://www.example.com/bogus">
+		<p>Click the pretty button!</p>
+		<input type="image" name="imageSubmit" src="images/tomandtim.jpg" alt="asdf" />
+	</form>
+	
+	<h3>Button & Hidden Controls</h3>
+	
+	<p>
+		Button element was introduced to allow devs more control over how their buttons appear, and to allow other elements to appear inside the button.  
+	</p>
+	
+	<p>
+		A hidden control is used when you want to add a value to a form that the user cannot see.  For example, dev might use a hidden filed to indicate which page the user was one when they submit or to send a constant value to the server that the user doesn't need to see.
+	</p>
+	
+	<form action="http://www.example.com/anotherexample.php">
+		<button><img src="images/seattle-seahawks-logo.png" alt="Seahwaks Logo" />Is this long enough?</button>
+		<input type="hidden" nae="cantSeeMe" value="0" />
+	</form>
+	
+	<h3><abbr title="review">Labelling Form Controls</abbr></h3>
+	
+	<p>
+		The &lt;label&gt; element increases the usability of forms for all users but particularly for vision-impaired users.  This is because if the users clicks on the text that is contained within the &lt;label&gt; element, it toggels the form control
+	</p>
+	
+	<p>
+		The &lt;label&gt; element can be used in two ways:<br />
+		1. Wrap around both the text description and the form input. <br />
+		2. Be kept seperate from the form control and use the 'for' attribute to dicate which form the control is a label for.<b> When using the 'for' attribute of the label element, you must use the 'id' attribute of the form control it is labelling.</b> 
+	</p>
+	
+	<form action="http://www.example.com/test.php">
+		<p>Which of these is your favorite?</p>
+		<input type="radio" id="Ferrari" name="exoticCar" value ="Ferrari" /><label for ="Ferrari">Ferrari</label>
+		<input type="radio" id = "Lambourghini" name="exoticCar" value="Lambourghini" /><label for="Lambourghini">Lambourghini</label>
+		<input type="radio" id="McClaren"name="exoticCar" value="McClaren" /><label for="McClaren">McClaren</label>
+	</form>
+	
+	<h3><abbr title="review">Grouping Form Elements</abbr></h3>
+	
+	<p>
+		You can group related form controls together inside the &lt;fieldset&gt;element.  Especially useful for long forms.  Most browsers show &lt;fieldset&gt; with a line around the edge to show how they are related.  This can be adjusted in CSS.
+	</p>
+	
+	<p>
+		The &lt;legend&gt; element can come directly after the opening &lt;fieldset&gt; tag and contains captions which helps identify the purpose of a group of form controls.
+	</p>
+	
+	<form action="http://www.example.com/form.php">
+		<fieldset>
+			<legend>Contact Information</legend>
+			<label>Full Name:<br /><input type="text" name="fullName"  /></label><br />
+			<label>Preferred Phone Number:<br /><input type="text" name="phoneNumber" /></label><br />
+			<label>Full Address<br /><textarea>Type out your full address here, like you would on an envelope</textarea></label>
+		</fieldset>
+	</form>
+	
+	<h3>HTML5: Form Validation</h3>
+	
+	<p>
+		<b>Form Validation</b> is when a form provides textual feedback if a user enters incorrect values.  Traditionally, form validation has been implemented by using JavaScript.  But HTML5 is introducing validation and leaves the work to the browser.
+	</p>
+	
+	<p>
+		Validation makes sure that the user enters information in a way that servers will be able to understand/compute with.  valdiating values before sending it to the server helps with reducing the amount of work the server has to do and enables users to see if there are problems before submitting the data.
+	</p>
+		
+	<p>
+		The below is just one form of validation.  The input element has an attribute of name 'required'.  When the value of this attribute is set to 'required', if the form is left blank the browser displays a message to that effect.
+	</p>
+	
+	<fieldset>
+		<form action="http://www.example.com/what">
+		<label for="name">Full Name:</label><br /><input type="text" id="name" name="name" required="required" />
+	</fieldset>
+	
+	<h3>HTML5: Date/Email/URL Input</h3>
+	
+	<p>
+		Many forms need to gather information like dates, email, address, and URL's.  This was traditionally done by using a text box.  HTML5 introduces a new form controls to standardise the way that information is collected.
+	</p>
+	
+	<p>
+		If asking a user for a date, you would use the input element with the 'type' attribute set to 'date'.  This will create a date input in browsers that support HTML5. If you wish to gather URLs or email addresses then setting the 'type' attribute to the respective data will restrict the acceptable form values to only certain types of data.
+	</p>
+	
+	<form action="http://www.example.com/book.php" method="get">
+		<fieldset>
+			<legend>Specific Input!</legend>
+			<label>Date:<br /><input type="date" name="depart" /></label><br />
+			<label for="emailAddress">Email:</label><br /><input type="email" id="emailAddress" name="emailAddress" /><br />
+			<label for="url">URL:</label><br /><input type="url" name="url" id="url" /><br/>
+		</fieldset>
+	</form>
+	
+	<p>
+		<b>BE CAREFUL: </b>The date input renders differently in Chrome v Firefox (is actually unsupported in FF according to MDN)
+	</p>
+	
+	<h3>HTML5: Search Input</h3>
+	
+	<p>
+		Sometimes you'll wnat a form that a user can utlize for search queries.  In this case you would set the 'type' attribute of the &lt;input&gt; element to 'search'.  Another attribute is <b>'placeholder'</b> whose value will be text that is shown in the text box until the user clicks in that area.
+	</p>
+	
+	<form action="http://www.example.com/login.php">
+		<label for="searchForm">Search:</label><br />
+		<input type="search" id="searchForm" name="searchForm" placeholder="Search Some Shit!" />
+	</form>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id = "chp8">Chapter 8: Extra Markup</h2>
+	
+	<p>
+		In this chapter, you'll learn about topics that are not easliy categorized.  You'll learn about:
+			<ul>
+				<li>The different versions of HTML and how to declare which version you're using</li>
+				<li>How to add comments</li>
+				<li>global attributes, such as 'class' and 'id'</li>
+				<li>Elements that are used to group together parts of the page where no other element is suitable</li>
+				<li>How to embed a page within a page using iframs</li>
+				<li>How to add info about the page using the &lt;meta&gt; element</li>
+				<li>Adding chracters such as angled bracks and copyright symbols</li>
+			</ul>
+	<p>
+	
+	<h3>Doctypes</h3>
+	
+	<p>
+		Becaues there have been several versions of HTML, each web page needs to declare what version of HTML it is using.  For HTML5 you would declare the language like so: <br /><br/ >
+		&lt;!DOCTYPE html&gt;
+	</p>
+	
+	<h3>Comments</h3>
+	
+	<p>
+		You already know the syntax (&lt;!-- blah blah --&gt;) and what they are used for sooo....
+	</p>
+	
+	<h3>ID attribute</h3>
+	
+	<p>
+		Every HTML attribute can carry the 'id' attribute, as such it is known as a <b>global element</b>.  It is used to uniquely identify an element from other elements on the page.  <b>It's value should start with either a letter or an underscore</b>.  No two elements should share the 'id' attribute
+	</p>
+	
+	<p>
+		When I start using CSS and JavaScript I will be able to use the 'id' attribute to style or script elements differently from any other element of the same type on the page.
+	</p>
+	
+	<h3>Class attribute</h3>
+	
+	<p>
+		Another global element is the 'class' attribute.  Instead of uniquely identifying one element in a document, you may want to identify several elements as being different.  For example, you might have some paragrpahs of text that contain info that is important than others.  
+	</p>
+	
+	<p>
+		To do this you can use the 'class' attribute.  It's value should describe the class it belongs to.  The 'class' attribute on any element can share the same value.  
+	</p>
+	
+	<p>
+		By default using these attributes does not affect the presentation of an element. The style will only change if there is a CSS rule associated with that class value.  A single element can belong to several classes, which are seperated by commas within in the class attribute.  
+	</p>
+	
+	<p>
+		No examples yet but will get plenty of practice for id and class once we get to CSS.
+	</p>
+	
+	<h3>Block Elements</h3>
+	
+	<p>
+		A <b>block element</b> is an elelemnt that always appears on a new line.  Examples of such elements include &lt;h1&gt;, &lt;p&gt;, and &lt;li&gt;
+	</p>
+	
+	<h3>Inline Elements</h3>
+
+	<p>
+		Some elements always appear to contine on the same line as their neighboring elements.  These are known as <b>inline elements</b>.  Examples include: &lt;a&gt;, &lt;b&gt;, and &lt;img&gt;
+	</p>
+	
+	<p>
+		The &lt;div&gt; element allows you to group a st of elements together in a one block-level box.  You may use a &lt;div&gt; element to group the items of the website header or to contain a comments section for visitors.  The contents of a &lt;div&gt; element will start on a new line.
+	</p>
+	
+	<p>
+		You can use an 'id' or 'class' attribute on a div and then apply some CSS style rules to indicated the location or space occupied by the &lt;div&gt; on the page or change the appearance of all the elements contained within.
+	</p>
+	
+	<h3>Grouping Text and Elements Inline</h3>
+	
+	<p>
+		The &lt;span&gt; element act like an inline equivalent to &lt;div&gt;.  It is used to either contain a section of text where there is no other suitable element to differentiate it from its surrounding text or contain a number of inline elements.  Just like a &lt;div&gt; you can use CSS to apply style rules.
+	</p>
+	
+	<h3>iframes</h3>
+	
+	<p>
+		The term <b>iframe</b> is short for inline frame.  An inline frame is a window that is 'cut' into your webpage that shows another page, like when you see a Google Maps window on sites that aren't google. But the content of an iframe can be any HTML page.
+	</p>
+	
+	<p>
+		The &lt;iframe&gt; element has several attributes that you need to know:
+			<dl>
+				<dt>src</dt>
+					<dd>Specifies the URL of the page to show in the frame.</dd>
+				<dt>height/width</dt>
+					<dd>Specifies the hieght/width of the iframe in pixels.
+				<dt>scrolling</dt>
+					<dd><b>*Not Supported in HTML5*</b>In HTML4 and XHTML, you can enable whether the iframe should have scrollbars or not.  This was important if the page inside the frame is larger than the space you have allowed it.  Acceptable values are: 'yes','no', or 'auto'</dd>
+				<dt>frameborder</dt>
+					<dd><b>*Not Supported in HTML5*</b>In HTML4 and XHTML it was used to indcate whether the frame should have a border</dd>
+				<dt>seamless</dt>
+					<dd>New in HTML5, this attribute can be applied to a frame when scrollbars are not desired. <b>Does not actually need a value</b></dd>
+			</dl>
+	</p>
+	
+	<p>For Google Maps embed it is easiet to just go to their site and grab the HTML straight from there.</p>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.5933183178304!2d-122.33382798403966!3d47.595151779183944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aa3b9f1182b%3A0xa636cd513bba22dc!2sCenturyLink+Field!5e0!3m2!1sen!2sus!4v1448133017734" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	
+	<h3>Information About Your Pages</h3>
+	
+	<p>
+		The &lt;meta&gt; lives within the &lt;head&gt; element and contains information about your page.  The user doesn't see any of this info but it fulfills a number of purposes such as telling search engines about your page, who created it, and whether it is time sensitive (if it is, the page can be set to expire)
+	</p>
+	
+	<p>
+		The &lt;meta&gt; element is an empty element so it does not have a closing tag.  The information is carred by attributes.  Most common attributes are 'name' and 'content' which tend to be used together. The value of the 'name' attribute is the name of the property which you want to address and the 'content' is the value that you want to give to this property.
+	</p>
+	
+	<p>
+		The value of the 'name' attribute <em>can be anything you want</em>. But there are some defined values that are commonly used :
+			<dl>
+				<dt>description</dt>
+					<dd>This contains a description of the page. Used by search engines to figure out what your page is about. Maximum of 155 characters. Sometimes displayed in <abbr title="search engine">SE</abbr> results.</dd>
+				<dt>keywords</dt>
+					<dd>This contains a list of comma-seperated words that a user might search on to find the page. This no longer has any noticeable effect on how search engines index your site.</dd>
+				<dt>robots</dt>
+					<dd>INdicates whether SEs should add this page to their search results or not.  A value of 'noindex' means it would not be added. A value of 'nofollow' indicates that the page should be displayed in the search resutls but none of the pages it links to.</dd>
+			</dl>
+	</p>
+	
+	<p>
+		The &lt;meta&gt; element also use the 'http-equiv' and 'content' attributes in pairs.  You can use this name/value pair to set the author of the page, whether it should be cached, and the date/time that the cached page should expire.
+	</p>
+	
+	<p>
+		Now get up there and start adding some meta!!
+	</p>
+	
+	<h3>Escape Characters</h3>
+	
+	<p>
+		Some characters are used in and reserved by HTML, like the left and right angle brackets.  Therefore, if you want these characters to appear on your page you need to use what are termed <b>escape characters</b>.  You can go to the <a href="http://htmlandcssbook.com/extras/html-escape-codes/">HTML Escape Codes page</a> on this book's webpage for a long list of escape codes. 
+	</p>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp9">Chapter 9: Flash, Video & Audio</h2>
+	
+	<h3>How Flash Works</h3>
+	
+	<p>
+		You can create your own Flash movies using the Flash authoring platform ($$$).  When a movie is created using the Flash authoring envior it is saved in a .fla file extension.  To use this file on your web page it must be converted into a different format, known as SWF (file extension: .swf).
+	</p>
+	
+	<p>
+		In previous version of HTML, when you exported a .fla file to the .swf format, Flash would create HTML code that you could embed into your webpage.  Traditionally, it would use the &lt;object&gt; and &lt;embed&gt; elements.  However, now it is more common to use JavaScript to implement Flash movies into your page.  
+	</p>
+	
+	<h3>Adding a Flash Movie to Your Web Page</h3>
+	
+	<p>
+		The most popular way of adding Flash into your page is using JavaScipt.  There are several scripts that allow you to do this without understanding JS very well (which you will in time!!).  The script we are going to look at is called the SWFObject.  You can obtain a copy of it for free from Google. One advantage to using this technique  is that it allows browsers to show altrenative content for users who are not capable of showing Flash.
+	</p>
+	
+	<p>
+		The technique we are focusing on uses a &lt;div&gt; element to create a space where the Flash movie should sit.  It will use an 'id' attribute whose value is used by the SWFObject script.  Inside the &lt;div&gt; element you can place an alternative description for users who cannot play Flash, like a description of the movie or even a still from it.
+	</p>
+	
+	<p>
+		The SWFObject script will check to see if the user's browser can play the Flash movie, if it can, the script will replace the content of the &lt;div&gt; element with the .swf file.  The &lt;script&gt; elements are placed in the 'head' section of the page.<br />  The 'type' attribute is used in the &lt;script&gt; element to indicate that the script inside is written in JavaScipt. The 'src' attribute tells the browser where to find the script (in this case, hosted on a Google AJAX server).<br /> The second &lt;script&gt; element is used to tell the browser about the Flash movie, as well as which element it should replace.  This element is actually telling the SWFObject script <b>five</b> pieces of information, which are in the brackets:
+			<ol>
+				<li>The <b>location</b> of the .swf file</li>
+				<li>The element thta the Flash movie should <b>replace</b>, specified by the 'value' of the 'id' attribute on the &lt;div&gt; elelent</li>
+				<li>The <b>width</b> of the Flash movie</li>
+				<li>The <b>height</b> of the Flash movie</li>
+				<li>The minimum <b>version</b> of the Flash player needed to view the movie</li>
+			</ol>
+	</p>
+	
+	<div id="example">
+		<p>Some Flash example movie</p>
+	</div>
+	
+	<h3>Understand Video Formats and Players</h3>
+	
+	<h4>Formats</h4>
+	
+	<p>
+		Just as movies are available in many different formats and require the correspoding dvd/vhs/bluplayer, web video formats are even more diverse and can only play the formats they support.  In order to view a video online, it may need to be converted into another format.  The process of converting a video into another format is sometimes referred to as <dfn id="def_encoding">encoding</dfn> the video. Several apps are avaialbe online that enable you to encode videos.  
+	</p>
+		
+	<h4>Players and Plugins</h4>	
+
+	<p>
+		Browsers were initially designed to show text and images only. For this reason, browsers built before 2010 usually required plugins or players to play video content.  Each plugin/player supported a particular type of video format.  Browsers have evolved to be able to support the HTML5 &lt;video&gt; tag.  This mostly renders players and plugins obsolete.  However, you can't rely on people having the most recent browsers when the yacces your site.
+	</p>
+	
+	<h4>Approach</h4>
+	
+	<p>
+		Easiest way to add video to your site is use a hosted service such as YouTube or Vimeo.  However in some cases this may not be appropriate, like we will see soon.  In this case you'll want to host the video on your own site.  At the time that Duckett wrote this book, it is important to note that it is considered best practice to use the HTML5 &lt;video&gt; element for browsers that support it and <em>also</em> Flash video for those that do not.  This mean you need to upload any videos you want to show in at least two formats: WebM and MP4.
+	</p>
+	
+	<h3>Using Hosted Video Services</h3>
+	
+	<h4>Advantages</h4>
+	
+	<p>
+		Sites like YouTube have players that work with the majority of web browsers. No need to worry about <a href="#def_encoding">encoding</a> since these sites allow you to upload your content in a rage of formats.  Web hosting companies will often charge  you extra if you use a lot of bandwidth.  Therefore, with a video, the cost of hosting could be too expensive given how large video files can be.  However, YouTube and Vimeo do not charge for bandwidth or overages at all so no worries there.
+	</p>
+	
+	<h4>Disadvantages</h4>
+	
+	<p>
+		Your video will be available on the website of the hosted service so users don't have to go to your website to watch it.  If you want availability of the site to be exclusive then you must host the video on your own server.  Some services will limit what your video is allowed to include. Most prohibit the use of advertisiting within the video upload (which prevenats you from monetizing content). And pretty much all ban porn-fuckery. Some hosted services will play their own adverts before your video begins.  Also the quality can be limited on some services.     
+	</p>
+	
+	<h4>The Alternative</h4>
+	
+	<p>
+		If you want to host video on your own site/server, that is a lot more work. We will look at two different ways you can do this:  Using both Flash Video and HTML5 &lt;video&gt; element. In order to ensure the maximum number of visitors to my site can see the video, it will have to be a combo of both.
+	</p>
+	
+	<h3>Preparing a Flash Video for Your Site</h3>
+	
+	<ol>
+		<li>
+			<p>
+				To play a Flash Video, you would have to convert the format of the video to FLV format.  Some Flash video players also support a format called H264.  
+			</p>
+		</li>
+		<li>
+			<p>
+				You will need to find a player that is written in Flash so it can play the FLV format.  This players adds a GUI layer like play/pause buttons.  
+			</p>
+		</li>
+		<li>
+			<p>
+				You can include the player into your page using the SWFObject technique discussed earlier.  You also need to tell the player where the video file is whether on your local system or a server.  
+			</p>
+		</li>
+	</ol>
+	
+	<div id="practiceSnow">
+		<p>test</p>
+	</div>
+	
+	 
+	<div id="snow">
+		<p>You cannot see this video because your browser does not support flash or cause you fucked up the code...</p>
+	</div> 
+	
+	<h3>HTML5: Preparing Video for Your Pages</h3>
+	
+	<p>
+		The new HTML5 &lt;video&gt; tag is supported only by the newer browser versions so not every user will be able to see your video.  Also, if you want to maximize the number of users who can watch your video you need to supply your video in more than one format.<br />
+		<b>H264</b>: IE and Safart<br />
+		<b>WebM</b>: Android, Chrome, Firefox, and Opera
+	</p>
+	
+	<h3>HTLM5: Adding Video to Your Pages</h3>
+	
+	<p>
+		In HTML5, it is not necessary to supply values for all attributes such as the ones that are used with the &lt;video&gt; element, which we will see in detail coming up.  These attributes are like on/off switches (AKA binary/boolean) If the attribute is present, then that option will be "on".  If not present, then it will be "off"<br />
+		If the browser does not support the &lt;video&gt; element then whatever is inside the tags will show up on the screen.
+	</p>
+	
+	<p>
+		The &lt;video&gt; element has a number of attributes which allow the user to control playback.  The following are the most common attributes:
+			<dl>
+				<dt>src</dt>
+					<dd>Specifies path of video</dd>
+				<dt>poster</dt>
+					<dd>Allows you to specify an image to show while the video is loading or until played</dd>
+				<dt>width, height</dt>
+					<dd>Set width/height of player</dd>
+				<dt>controls</dt>
+					<dd>when used, this attribute tells the browser to supply its own controls for playback. does not require value</dd>
+				<dt>loop</dt>
+					<dd>when used, indcates that the video should loop after it plays through. does not require value</dd>
+				<dt>autoplay</dt>
+					<dd>when used, the video starts to play auotmatically when loaded</dd>
+				<dt>preload</dt>
+					<dd>Tells the browsers what to do when the page laods.  Can have one of three values (default value is 'auto'):</dd>
+					<dd>none: video should not load until user presses play</dd>
+					<dd>auto: browser downloads video when page loads</dd>
+					<dd>metadata: browsers just collects metadata (information about the video)</dd>
+			</dl>
+			
+		
+		<video src="video/puppy.mp4" 
+					poster="images/puppy.jpg"
+					width="400" height="300"
+					controls
+					preload= "none">
+					<p>A video of a puppy playing in the snow</p>
+		</video>
+	
+		<h3>HTML5: Mltiple Video Sources</h3>
+	
+		<p>
+			You can also use the &lt;source&gt; element to specify the location of the file to be played. It would replace the 'src' attribute in the &lt;video&gt; element.  It is especially useful when you need to specify multiple sources of the video in different formats. It is an empty element. 
+		</p>
+	
+		<p>
+			It takes the 'src' attribute as well as the 'type' attribute, which specifies what format the video is in and the 'codec' value, which specifies the codec that was used to encode the video, is specifed <em>within the 'type' attribute</em>.  Note the use of single and double quotes when it is supplied
+		</p>
+	
+	<h3>Adding Audio to Web Pages</h3>
+	
+	<p>
+		The most common format for putting audio on web pages is MP3. You could use a hosted service, like soundcloud or myspace, to embed/play audio in your page.  Another method is to use Flash players that vary in style. HTLM5 also introduced a new &lt;audio&gt; element that provides its own set of controls, just like the &lt;video&gt; element.
+	</p>
+	
+	<h3>Adding a Flash MP3 Player</h3>
+	
+	<div id="audioTest">
+		<p>If you can't hear this audio is either because your browsers doesn't support our Flash player OR you suck at coding.</p>
+	</div>
+	
+	<p>
+		This is the exact same technique as embedding a Flash video player. You use the SWFObject technique like earlier.  PRACTICE THIS MORE TILL YOU REMEMBER ALL THE VARS/PARAMS YOU GOTTA PASS TO THE swfobject.embedSWF FUNCTION.
+	</p>
+	
+	<h3>HTML5: Adding an HTML5 Audio Player</h3>
+	
+	<p>
+		HTML5 introduced the &lt;audio&gt; element to include audio files in your pages.  As with HTML5 video, browsesr expect different formats for audio.  It has a nubmer of attributes which allow contriol of audio playback:
+		
+			<dl>
+				<dt>src</dt>
+					<dd>guess!</dd>
+				<dt>controls</dt>
+					<dd>Guess again!</dd>
+				<dt>autoplay</dt>
+					<dd>Add another!</dd>
+				<dt>preload</dt>
+					<dd>Indicates what the browsers should do if the player is not set to 'autoplay'. It can have the same values as the &lt;video&gt; element.
+				<dt>loop</dt>
+					<dd>turn on looping</dd>
+			</dl>
+	</p>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	
+	<!--
+	<audio src="audio/test-audio.ogg" controls autoplay>
+		<p>test</p>
+	</audio>
+	-->
+	
+	<h1>Part 2: CSS!</h1>
+	
+	<h2 id="chp10">Chapter 10: Introducing CSS</h2>
+	
+	<p>
+		In this chapter, you will learn how to make your web page look more attractice and control is design using CSS. You use CSS to set how the content in an element should appear. In this chapter we will go cover: 
+		
+			<ul>
+				<li>Introducing you to how CSS works</li>
+				<li>Teach you how to write CSS rules</li>
+				<li>Show you how CSS rules apply to HTML pages</li>
+			</ul>
+	</p>
+	
+	<p>
+		CSS uses rules to associate with elements on an HTML page. These rules govern how the specified elements should be displayed.  A CSS rule contains two parts: a <b>selector</b> and a <b>declaration</b>.
+	</p>
+	
+	<p>
+		p { <br /> font-family: Arial; <br />}
+		<br />The selector is the portion before the first curly bracket and it indicates which element the rule should apply to. You can apply the same rule to different elements by seperating their names with commas.  The declarations are everything inside of the brackets and indicate how the elements should be styled. Declarations come in two parts: a property and value.  They are sepereated by a colon. You can specify more than one declaration by seperating them with semi-colons. 
+	</p>
+	
+	<h3>Using External CSS</h3>
+	
+	<p>
+		The &lt;link&gt; element can be used in an HTML  document to tell the browser where to find the CSS file used to style the page. It is an empty element and it lives inside the &lt;head&gt; element.  It uses three attributes:
+	</p>
+			<dl>
+				<dt>href</dt>
+					<dd>This specifies the path to the CSS file</dd>
+				<dt>type</dt>
+					<dd>specifies the type of document being linked to. Should be set to 'text/css'</dd>
+				<dt>rel</dt>
+					<dd>Specifies the relationship between the HTML page and the file it is linked to. Value should be 'stylesheet' when linking to a CSS file.</dd>
+			</dl>
+		
+	<p>
+		You can link to more than one CSS style sheet by having a &lt;link&gt; element for every sheet.  Some authors use one CSS file to control the presentation and a second to control the layout.
+	
+	</p>
+	
+	<h3>CSS Selectors</h3>
+	
+	<p>
+		There are many different types of selectors that allow you to target rules to specific elements in an HTML document.  Selectors are case sensitive, so they must match element names and attribute values exactly.  There are some more advanced selectors which allow you to select elements based on attributes and their values, which you will see later on.
+	</p>
+	
+	
+	<p>
+		Here is a link to the <a href="./images/cssSelectorTable.png">CSS Selector Table</a>. You should study this table and create note cards for each selector.  Doesn't make much sense to replicate the whole thing using HTML since I don't know how to make a nice table this this one yet.  Will come back to it when I learn more CSS.
+	</p>
+	
+	<h3>How CSS Rules Cascade</h3>
+	
+	<p>
+		If there are two or more rules that apply to the same element, it is important to understand which will take precedence.  If two selectors are identical, <em>the latter of the two will take precedence</em>. If one selector is more specific than the others, the more specific rule will take precedence over more general ones. Specificity, amd the '!important' syntax, are described in detail on the Mozilla Development Network page for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">specificity</a>.  
+	</p>
+	
+	<h3>Inheritance</h3>
+	
+	<p>
+		If you specify the 'font-family' or 'color' properties on the &lt;body&gt; element, they will apply to most child elements. This is becase the value of the 'font-family' property is <b>inherited</b> by child elements. It saves you from having to apply these properties to as many elements and results in a simpler style sheet.  
+	</p>
+	
+	<p>
+		You can comperate this with the 'background-color' or 'border' propetries; they are <strong>not inherited</strong> by child elements. If it was then the page would look more like a patchwork quilt. You can force many properties to inherit values from its parent element by using 'inherit' for the value of the property.  
+	</p>
+		
+	<h3>Why Use External Style Sheets?</h3>	
+		
+	<p>
+		When building a website there are several advantages to using an external style sheet.  All of the webpages can use the same style sheet by using the &lt;link&gt; element on every HTML page. This means you wouldn't need to repeat style code within a page which would make your code longer and redundant.  Also, making a change to the style sheet would update all of the pages instead of having to do it one by one.  It is also a good practice to seperate the content of your site from the rules that determine its appearance.
+	</p>
+	
+	<p>
+		Sometimes you may consider placing CSS rules in the same page as your HTML code. Don't.  It is just a good industry practice to keep them seperate.  When you see them in the &lt;head&gt; section in the book, it is just to save space.
+	</p>
+	
+	<h3>Different Versions of CSS & Browser Quirks</h3>
+	
+	<p>
+		There are different versions of CSS and, just like HTML, every browser may not support or implement all CSS features exactly the same depending on the browsers and it's version. Before launching any site it is important to test it in more than one brwosers to ensure consistency. There are online tools that show you what a page looks like in multiple browsers so you do not need to install many different types of browsers.  
+	</p>
+	
+	<h3>Commenting in CSS</h3>
+	
+	<p>
+		Commenting in CSS is achieved by using the /* and */ symbols.
+	</p>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp11">Chapter 11: Color</h2>
+	
+	<p>
+		Color can bring a page to life.  In this chapter we will be looking at:
+			<ul>
+				<li>How to specify colors</li>
+				<li>Color terminology</li>
+				<li>Contrast, ensuring your text is readable</li>
+				<li>Background colors</li>
+			</ul>
+	</p>
+	
+	<h3>Foreground Color</h3>
+	
+	<p>
+		The 'color' property allows you to specify the color of text inside an element,  You can specify any color in CSS in one of three ways:
+			<ul>
+				<li>RGB Values<ul><li>These express color sin terms of how much red, green, and blue are used to make it up.  For example: rgb(100, 100, 90)</li></li></ul>
+				<li>Hex Codes<ul><li>Six-digit codes that represent RGB in a color preceded by a # sign.</li></li></ul>
+				<li>Color Names<ul><li>147 predefined color names that are recognized by browsers</li></li></ul>
+			</ul>
+	</p>
+	
+	
+	<h3>Background Color</h3>
+	
+	<p>
+		The 'background-color' property sets the color of the background for each 'box' (discussed in Intro to CSS).  Specify color using the same three ways as foreground: RGB, hex, or color name.
+	</p>
+	
+	<h3>Understanding Color</h3>
+	
+	<dl>
+		<dt>Hue</dt>
+			<dd>Hue is near to the colloquial idea of color.</dd>
+		<dt>Saturation</dt>
+			<dd>Saturation refers to the amount of gray in a color.  At maximum saturation there would be no gray in the color.  At minimum color, the color would be mostly gray.</dd>
+		<dt>Brightness</dt>
+			<dd>Brightness refers to how much black is in a color.  At maximum brightness there would be no black.  At minimum brightness the color would be very dark.</dd>
+	</dl>
+	
+	<h3>Contrast</h3>
+	
+	<p>
+		When picking foreground and background colors, it is important to ensure that there is enough contrast for the text to be legible.  Text is harder to read when there is low contrast, partciularly problematic for those with visual impairments and color blindness.
+	</p>
+	
+	<p>
+		Text is easier to read when there is high contranst between back and fore ground.  However if there is a lot of text on your page then too much can make it harder to read after awhile.  
+	</p>
+	
+	<p>
+		For long spans of text, reducing contrast a little bit improves readability. You can reduce contrast by using dark gray text on a white background or off-white text on a dark background.
+	</p>
+	
+	<h3>CSS3 Opacity</h3>
+	
+	<p id="opacity">
+		CSS3 introduces the 'opacity' property which allows you to specify the opacity of an element and any of its child elements.  The value is a number between 0.0 and 1.0.  There is another property named 'rgba' (it is a value of a property, not a property itself) that allows you to specify a color with an RGB but adds a fourth value to indicate opacity. This rgba will only affect the element on which it is applied(not child elements)
+	</p>
+	
+	<h3>CSS3: HSL Colors</h3>
+	
+	<p>
+		CSS3 introduces an entirely new and intuitive way to specify colors using hue, saturation, and lightness values.  
+	</p>
+	
+	<p id="hue">
+		<b>Hue</b> pretty much means color. In HSL colors, hue is often represented as a color circle where the angle represents the color. <b>Saturation</b> is the amount of gray in a color.  It is represented as a percentage. <b>Lightness</b> is the amount of white or black in a color.  It is also represented as a percentage.  It is different than brightness because lightness offers white as an option, whereas brightness offers only black.
+	</p>
+	
+	<p>
+		The syntax for specifying a number in HSL format is: hsl(x, y%, z%) with an optional value 'a' that specifies opacity like rgba does.
+	</p>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp12">Chapter 12: Text</h2>
+	
+	<p>
+		The properties that allow you to control the apperance of text can be split into two groups:
+	</p>
+		
+			<ul>
+				<li>Those that directly effect the font and its apperance (including the typeface, whether it is bold/italic/regular, and the size of the text)</li>
+				<li>Those that would have the same effect on text no matter what font you were using (including the color of text and the spacing between words and letters)</li>
+			</ul>
+	<p>
+		The formatting of text can have a significant effect on how readable your pages are.  As you read through this chapter there will be design tips on how to display your type.
+	</p>
+	
+	<h3>Typeface Terminology</h3>
+	
+	<dl>
+		<dt>Serif</dt>
+			<dd>Serif fonts have extra details on the ends of the main strokes of letters. The details are known as serif. <i>In print</i>, serif fonts were traditionally used for long passages of text because they were considered easier to use.</dd>
+		<dt>Sans-Seif</dt>
+			<dd>Sans-Serif fonts have straight ends to letters, and therefore much cleaner design.  Screen have a lower resolution than print. So, if the text is small, sans-serif can be clearer to read.</dd>
+		<dt>Monospace</dt>
+			<dd>Every letter in a monospace (or fixed-width) font is the same width. Monospace fonts are commonly used for code becfause they align nicely, making the text easier to follow. 
+	</dl>
+	
+	<p>
+		When choosing a typeface it is important to understand that the font will only appear on the user's browser if it is installed on that user's computer.  As a result, sites often use a small set of typaces that are installed on most computers (pg. 269).  There are some techniques to get around this which you will see soon.  It is possible to speificy more than one typeface and create an order of preference.  This is known as a font stack.
+	</p>
+	
+	<h3>Specifying Typefaces</h3>
+	
+	<p>
+		The 'font-family' property allows you to specify the typeface that should be used for the any tet inside the element to which a CSS rule applies.  The value of this property is the name of the typeface you want to use.  The people who are visiting  your site need the typeface you have specified installed on their computer in order for it to be displayed.
+	</p>
+	
+	<p>
+		You can specify a lost of fonts seperated by commas.  This allows the browser to fallback on another option if the user does not have one of the typefaces installed. It is also common to end with a generic font name for that type of font.  If a font name is made up of more than one word, it should be put in double-quotes.  Designers suggest pages usually look better if they use no more than three typefaces on a page.
+	</p>
+	
+	<h3>Size of Type</h3>
+	
+	<p>
+		The 'font-size' property enables you to specify a size for the font.  They are several ways to specify the size of a font.
+	</p>
+	
+	<p>
+		Pixels are commonly used because they allow very precise control.  The number of pixels is followed by the letters 'px'
+	</p>
+	
+	<p>
+		You can also use percentages. The default size of text in a browser is 16px.  This is what the percentages are based off.  If you creat ea rule to make all text inside the &lt;body&gt; element to be 75% (to make it 12px) and then specify another rule that indicates the content of an element inside of it should be 75% size, it will be 9px (75% of 12px)
+	</p>
+	
+	<p>
+		An em is equivalent to the width of a letter 'm'....lol
+	</p>
+
+	<h3>More Font Choices</h3>
+	
+	<p id="testFontFace">
+		The '@font-face' property allows you to use a font, even if it is not installed on the user's machine by specifying where it can be downloaded from. This is done by supplying a path to a copy of the font, which is downloaded if it does not exist on the user's machine. 
+	</p>	
+	
+	<p>
+		Couldn't get this to work very well.  Try at home.
+	</p>
+	
+	<p>
+		'@font-face' has an interesting syntax.  In the CSS style sheet you would place the '@font-face' property where you would normally put selectors:<br /><br />
+		@font face {<br />
+			font-family: XXX<br />
+			src: url('x/y/z.xyz')<br />
+		}<br />
+		'Font-family' specifies the name of the font.  This name can then be used as a value of the 'font-family' property in the rest of the style sheet. 'src' specifies the path to the font.  In order for this technique to work in all browsers, you probably need to specify paths to a few different versions of the font.
+	</p>
+	
+	<h3>Understanding Font Formats</h3>
+	
+	<p>
+		Different browsers support different formats for fonts (like audio and video!) so you will need to supply the font in several vartaions to reach all browsers. The various formats should appear in the CSS sheet in this order :
+			<ol>
+				<li>eot</li>
+				<li>woff/woff2</li>
+				<li>ttf/otf</li>
+				<li>svg</li>
+			</ol>
+		Below is a table of which font formats are compatible with many different verions of browsers.<br />
+	</p>
+	
+	<div>
+		<img src="images/browserFontSupport.png" alt="A table depicting which font formats are comaptiable with which browsers" />
+	</div>
+	
+	<h3>Bold</h3>
+	
+	<p>The 'font-weight' property allows you to create bold text. The two values that this property commonly takes are 'normal' and 'bold'.  There is a 'normal' option because in an case where, say, a whole paragprah is bolded, you may need to unbold a particular word.  It works as an 'off-switch' essentially.</p> 
+	
+	<h3>Italics</h3>
+	
+	<p>
+		If you want to create italic text, then you must use the 'font-style' property.  There are three values this can take: 'normal', 'italic', and 'oblique'.  Oblique takes the font you are using and puts it at an angle while italics uses a special stylized version of font.
+	</p>
+	
+	<h3>Upper/Lowercase</h3>
+	
+	<p>
+		The 'text-transform' property is used to change the case of text.  It can have one of the following values: uppercase, lowercase, capitalize.
+	</p>
+	
+	<h3>Underline & Strike</h3>
+	
+	<p>
+		The text-decoration allws youto specify the following values: none (removes decoration), underline, overline, line-through, blink (don't use this)
+	</p>
+	
+	<h3>Leading</h3>
+	
+	<p id="lineheight">
+		Leading (pronounced: <span id="leading">ledding</span>) is a term typographers use for the vertical space between lines. The 'line-height' property sets the hieght of an entire lne of text.  By increasing the 'line-height', you increase the gap between lines of text.  
+	</p>
+	
+	<h3 id="letterSpacing">Letter and Word Spacing</h3>
+	
+	<p>
+		Kerning is the term typographers use for the space between each letter.  You can control it using the property 'letter-spacing'.  It is particularly useful to increase kerning when a heading or sentence is in all uppercase because it makes it easier to read.  Increasing kerning when letters are normal sized makes it more difficult to read.  
+	</p>
+	
+	<p>
+		You can also control the gap between words using 'word-spacing' property.  The default gap between words is determined by the typeface but is normally around 0.25em and it is unlikely that you'd need to change it.  If it is a bold typeface or the letter spacing is increased then increasing word space can increase readability.
+	</p>
+	
+	<p>
+		When specifying a value for these properties, they should be given in ems and it will be added on top of the default value.
+	</p>
+	
+	<h3 id ="alignRight">Alignment</h3>
+	
+	<p>
+		The 'text-align' property allows you tocontrol the alignment of text.  Acceptable values are: left, right, center, and justified.  
+	</p>
+	
+	<p>
+		Justified indicates that every line in a paragraph except the last, should take up the full width of the containing box. It looks at words on each line and creates an equal gap between words.  IT can look odd if you end up with large gaps between some words and smaller gaps between others.  This happens when your lines are not veryw ide or when your text contains long words.
+	</p>
+	
+	<h3>Vertical Alignment</h3>
+	
+	<p>
+		The 'vertical-align' property is a common source of confusion.  It is <strong>not</strong> intended to allow you to vertically align text in the middle of elements like &lt;p&gt; and &lt;div&gt;. However, it does have this effect when used with the cells of a table (&lt;td&gt; and &lt;th&gt;)
+	</p>
+		
+	<p>
+		It is more commonly used with inline elements like &lt;em&gt;, &lt;strong&gt;, or &lt;img&gt;.  When used with these elements, it alter the vertical alighnment of the inline element or table-cell box.
+	</p>
+	
+	<h3>Indenting Text</h3>
+	
+	<p>
+		The 'text-indent' property allows you to indent the first line of text within an element.  The amount you want indented can be specified in a number of ways but it is usually given in em or pixels.
+	</p>
+	
+	<p>
+		'text-indent' can also take a negative value, meaning the text would be pushed off the browsers window. This is useful if you have an image you would rather display instead of plaintext but still need to keep the text in the HTML so that search engines and users who cannot see the image are still about to use it.
+	</p>
+
+	<h3 id="dropShadow">CSS3: Drop Shadow</h3>
+	
+	<p>
+		The 'text-shadow' property has become commonly used despite lacking support in all browsers.  It is used to create a drop shadow, which is a dark version of the word just behind it and slight offset.  It can also be used to create an embossed effect by adding a shadow that is slightly lighter than the text.
+	</p>
+	
+	<p>
+		There are four values that the 'text-shadow' property can take.  They are, in order:
+	</p>
+	
+	<div class="important">
+	  <ol>
+		<li>First value indicates how far to the left or right the shadow should fall.</li>
+		<li>Second value indicates the distance to the top or bottom that the shadow should fall</li>
+		<li>Third value (optional) specifies the amount of blur that should be applied to the drop.</li>
+		<li>Fourth value indicates the color of the drop shadow</li>
+	  </ol>
+	</div>
+	
+	<h3>First Letter or Line</h3>
+	
+	<p>
+	  You can specify different values for the first letter or first line of text inside an element using ':first-letter' and ':first-line'.  
+	</p>
+	
+	<div class="important">
+	  <p>
+		  Technically these are not known as properties.  They are known as <b>pseudo-elements</b>.  You specify the pseudo-element at the end of the selector, and then specify the delcarations as you would normally for any other element.  
+	  </p>
+	  
+	  <p>
+		  A pseudo-element acts like an extra element is in the code.  For 'first-line/letter' it is as if there is an extra element around the first letter or line which can have it's own styles applied.
+	  </p>
+	</div>
+	
+	<h3>Styling Links</h3>
+	
+	<p>
+	  Browsers tend to show links in blue with an underline by defaults, and they will change the color of links that have been visited to help users know which pages they have been to.
+	</p>
+	
+	<p>
+		In CSS there are two <b>pseudo-classes</b> that allow you to set different styles for links that have and have not been visited:  They are: ':link' and ':visited'.
+	</p>
+	
+	<div class="important">
+	  <p>
+        A pseudo-class acts like an extra value for a 'class' attribute.  In the case of the ':visited' pseudo-class, it allows you to have different styles for links that have been visited.
+	  </p>
+	  
+	  <p>
+		A pseudo-class specifies a special state of the element while a pseudo-element allows you to style certains parts of a document, like the first-line or letter.
+	  </p>
+	</div>
+	
+	  <p>	
+	    Link allows you to specify styles for links that have not yet been visited. Visited allows you to set styles for links that have been clicked on.
+	  </p>
+	  
+	  <h3>Responding to Users</h3>
+	  
+	  <p>
+		There are three 'pseudo-classes' that allow you to change the apperance of elements when a user is interacting with them.
+	  </p>
+	
+	  <dl>
+		<dt>:hover</dt>
+		  <dd>Applied when a user hovers over an element with a pointing device like a mouse. Commonly used to change the apperace of links and buttons when a user places a cursor over them. Doesn't work on touch screens....yet!</dd>
+		<dt>:active</dt>
+          <dd>Applied when an element is being activate by a user, like pressed (touch screen) or clicked with a mouse. Sometimes used to make a button or link feel like it is being physcially pressed</dd>
+		<dt>:focus</dt>
+		  <dd>Applied when an element has focus.  Any element that you can interact with can have focus.  Focus occurs when a browser discovers that you are ready to interact with an element.  For example, when your cursor in in a form input ready to accept text, it is said to have focus.</dd>
+	  </dl>
+	
+	<h3>Attribute Selectors</h3>
+	
+	<p>
+	  Like the CSS selectors we met earlier, there are also a set of attribute selectors that allow you to create rules that apply to elements that have an atribute with a specific value.  Here is a table of the <a href="./images/attributeSelectorTable.png">Attribute Selectors detailed in the HTML&CSS book</a>.
+	</p>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp13">Chapter 13: Boxes</h2>
+	
+	<p>
+		In the introduction to CSS we learned how CSS treats each HTML element as if it were living in its own box. You can set several properties that effect the apperance of these boxes. In this chapter you will see how to:
+	</p>
+	
+	<ul>
+      <li>Control the dimensions of boxes</li>
+	  <li>Create borders around boxes</li>
+	  <li>Set margins and padding for boxes</li>
+	  <li>Show and hide boxes</li>
+	</ul>
+	
+	<h3>Box Dimensions</h3>
+	
+	<div class="box">
+		<p>
+			By default, a box is sized just big enough to hold its contents. However you can set your own dimensions for a box using the 'width' and 'height' properties.
+		</p>
+		
+		<p>
+		  The most popular way to specify the size of boxes is using pixels, percentages or ems. Traditionally, pixels have been the most popular method because htey allow very precise control over size.  
+		</p>
+		
+		<p>
+			When using percentages, the size of the box is relative to either the size of the window or, if it is encased within another box, a percentage of the size of the containing box
+		</p>
+		
+		<p>
+			When using ems, the size of the box is base on the size of text within it.  Designers have recently started to use percetnage and ems more for measurements because they are more flexible across devices with different screen sizes (e.g. mobile devices)
+		</p>
+	</div>
+	
+	<h3>Limiting Width</h3>
+	
+	
+	<div class="box">
+	<p>
+		Some page designs expand and shrink to fit the size of the user's screen.  In such designs, 'min-width' is used to set the smallest size a box can be when the display window is narrow and 'max-width' is used to set the largest size a box can ben when the display is wide.
+	</p>
+	
+	<p>
+	  These are very helpful properties that helps ensure your pages are legible across differnt screen sizesm especially mobile devices.  For example, you can use the max-width property to esnure that lines of text do not appear too wide within a window and the min-width property to make ure that do not appear too narrow.  
+	</p>
+	
+	</div>
+
+	
+	<h3>Limiting Height</h3>
+	
+	<div class="box">
+	  <p id="groove">
+	    In the same way that you limit width, you can also limit box height.  This is acheived using the 'min-height' and 'max-height' properties.  If you set the height of the box too small you can see that the content of the box will take up more space than the size specified for the box.
+	  </p>
+	  
+	  <p id="ridge">
+	    If the box is not big enough to hold the content, then the content expands out of the box and everything looks awful and messy.  To control what happens when there is not enough room inside the box you can use the 'overflow' property.
+	  </p>
+	</div>
+	
+	<h3>Overflowing Content</h3>
+	
+	<div class="box" id="noScroll">
+	<p>
+	  The 'overflow' property tells the browser what to do if the content contained within a box is larger than the box itself.  It can have one of two values: hidden or scroll.	
+	</p>
+	
+	<p id="outset">
+	  The hidden property simply hides extra content that does not fit in. The scroll property, meanwhile, adds a scrollbar to the box so that users can scroll to see the missing content.  
+	</p>
+	</div>
+	
+	<h3>Border, Margin, and Padding</h3>
+	
+	<p>
+	  Every box has three available properties tha can be adjusted to control its apperance. If you specify a width for a box, then the borders, margin, and padding are added to its width and height.
+	</p>
+	
+	<dl>
+	  <dt>Border</dt>
+	    <dd>Everybox has a border (even if it is not visible or set to 0px).  The border seperates the edge of one box from another.</dd>  
+	  <dt>Margin</dt>
+	    <dd>Margins sit outside the edge of the border.  You can set the width of a margin to create a gap between the borders of two adjacent boxes.</dd>
+	  <dt>Padding</dt>
+	    <dd>Padding is the space between the border of a box and any content contained within it.  Adding padding can increase the readability of its contents.</dd>
+	</dl>
+	
+	<h3>White Space &amp; Vertical Margin</h3>
+	
+	<p class="box">
+	  The padding and margin properties are very helpful in adding space between various items on the page.  Designers refer to the space between items on a page as white space.  If you have a border around a box you would not want the text inside to touch the border of the box or it would become difficult to read and straining on the eyes.  
+	</p>
+	
+	<p class="box">
+	  Or if you had two boxes that were adjacent to one another, you would not want the border of each to touch the other because then they would look twice as thick on the sides that are touching as the sides that are not. 
+	</p>
+	
+	<h3>Border Properties</h3>
+	
+	<h4>Width</h4>
+	
+	<p>
+	  The 'border-width' property is used to control the width of the border.  The values of this property can be either given in pixels or using one of the following predefined values: thin, medium, and thick.  (You cannot use percentages)
+	</p>
+	
+	<p>
+	  You can control the size of each individual side of the border by using one of the four following props: border-top-width, border-bottom-width, border-left-width, border-right-width.  You can specify different widths for each of the borders.  The values would be listed in clockwise order starting from the top: top, right, bottom, left.
+	</p>
+	
+	<h4>Style</h4>
+	
+	<p>
+	  'border-style' is used to control what style the bordre is.  It is possible to control the style of individual border sides using the same format as above.  It can have the following values:
+	</p>
+	
+	<ul>
+	  <li>solid</li>
+	  <li>dotted</li>
+	  <li>dashed</li>
+	  <li>double<ul><li>two border lines determined by 'border-width' property)</li></ul></li>
+	  <li>groove<ul><li>appears to be carved into the page</li></ul></li>
+	  <li>ridge<ul><li>appears to 'stick out' from the page</li></ul></li>
+	  <li>outset<ul><li>looks like it is coming out of the screen</li></ul></li>
+	  <li>hidden/none</li>
+	</ul>
+	
+	<h4>Color</h4>
+	
+	<p>
+	  You can specify the color of a border using either RGB, hex, or color name values.  You can also use HSL but because that was only introduced in CSS3, it will not work in older browsers. It is possible to control the style of individual border sides using the same format as above.  
+	</p>
+	
+	<h4>Shorthand</h4>
+
+	<p>
+	  The 'border' property alows you to specify the width, style and color of aborder in one property, the values being coded in the aforementioned specific order.  
+	</p>
+	
+	<h3>Padding</h3>
+	
+	<p>
+	  The 'padding' property allows you to specify how much space should appear between the content of an element and its border.  The value of this property is most often specified in pixels (although it is also possible to use percentages or ems).  If a percentage is used, the padding is a perentage of the browser window or of the containg box if it is inside another box.  Again, if padding is specified it is added onto the width of the box.
+	</p>
+	
+	<p>
+	  Padding helps increase the readability of content within boxes because your eye strains less trying to seperate content from the edges of the border.  You can specify different values for each side of a box as before or use a shorthand method that goes clockwise from the top. <strong>The value of 'adding' is not inherited by child elements in the same way that 'color' is; so you need to specify the 'padding' for every element that needs to use it.</strong>
+	</p>
+	
+	<h3>Margin</h3>
+	
+	<p>
+	  The 'margin' property controls the gap betweenboxes.  Its value is commonly given in pixels, althought you may also use percentages and ems. If one box sits on top of another, margins, are collapsed, which means the larger of the two margins will be used and the smaller will be disregarded.  Note: If the width of a box is specified then the margin is added onto the width of the box.  You can specify each individual margin side and also use shorthand starting from the top going clockwise.  
+	</p>
+	
+	<h3>Centering Content</h3>
+	
+	<p>
+	  If you want to center a box within a page, you can set the 'margin-left' and 'margin-right' values to 'auto'.  The browsers automatically sets the margins on either side to be equal.  In order to center a box on the page, you need to set a 'width' for the box or else the box takes up the full width of the page.
+	</p>
+	
+	<h3>Change Inline/Block</h3>
+	
+	<p>
+	  The 'display property allows you to turn an inline element into a block-level element or vice versa, and can also be used to hide an element from the page. The values this property can take are:
+	</p>
+	
+	<ul class="blah">
+	  <li>inline</li>
+	  <li>block</li>
+	  <li>inline-block</li>
+	  <li>none</li>
+	  <li class="cantSeeMe">Fuck Portland</li>
+	</ul>
+	
+	<h3>Hiding Boxes</h3>
+	
+	<p>
+	  The 'visibility' property allows you to hide boxes from users but it leaves a space where the element would have been.  It takes two value: 'hidden' and 'visible'.  Remember: if visibility is set to hidden then white space will be shown in its place. If don't want white space you the 'display' property.
+	</p>
+	
+	<h3>CSS3: Border Images</h3>
+	
+	<p>
+	  The 'border-image' property applies an image to the border of any box.  It takes a background image and slices it into 9 pieces.  Here is an example image:<br /><img class="dotsImage"src="images/dots.gif" alt="A Background Image showing Pink Dots" />This image will be sliced up by 'border-image' into 9 sections.  The corner slices will always be placed in the corners of the box, but there are other choices for the sides.
+	</p>
+	
+	<p>
+	  The 'border-image' property requires three pieces of information:
+	</p>
+	
+	<ol>
+	  <li>The URL of the image</li>
+	  <li>Where to slice the image</li>
+	  <li>What to do with the straight edges; the possible values are:
+	     <ul>
+		    <li>stretch: stretches the image to fit</li>
+			<li>repeat: repeats the image along the length of the side</li>
+			<li>round: like repeat but if the slices do not fit exactly, the browsers scales the image so they will</li>
+		 </ul>
+	</ol>
+	
+	<p class="borderDots">
+		Sick!! I did it! The problem at work must have been the browser?  Maybe it was an older version and did not have CSS3 (Update browsers at work...)
+	</p>
+	
+	<h3>CSS3: Box Shadows</h3>
+	
+	<p>
+	  The 'border-shadow' property allows you to add a drop shoadow around a box.  It works just like the 'text-shadow' property that you met on pg. 288.  It must use at least the first of these two values as well as a color:
+	</p>
+	
+	<ul>
+	  <li>(Req.) Hortizontal Offset: negative values psotion the shadow to the left of the box.</li>
+	  <li>(Req.) Vertical Offset: negative values position the shadow to the top of the box.</li>
+	  <li>(Req.) Color: RGB, HSL, hex, color name	
+	  <li>(optional) Blur Distance: If omitted, the shadow is a solid line like a border.</li>
+	  <li>Spread of Shadow</li>IF used, a positive value will cause the shadow to expand in all directions, and a negative value will make it contract.</li>
+	  <li>(optional)Inset: The 'inset' keyword can also be used before these values to create an inner-shadow</li>
+	</ul>
+	
+	<p class="box">
+	  Cheggg it outtt!! A lil bitty shadow! Make some more boxes with unique IDs to test out some of the other properties like 'inset'
+	</p>
+	
+	<p>
+	  You may have noticed that in the CSS there were extra properties for border image like '-moz-border-image' and '-webkit-border-image'.  These properties are not in the CSS specification but help earlier versions of Chrome, Firefox, and Safari. You'll see them on some other properties, usually ones that are only in CSS3.
+	</p>
+	
+	<h3>CSS3: Rounded Corners</h3>
+	
+	<p>
+	  CSS3 introduces the ability to create rounded corners on any box, using a property called 'border-radius'.  The value indicates the size of the radius in pixels. Older browsers that do not support this property will show a box with right-angle corners.
+	</p>
+	
+	<p>
+	  You can specify individual values for each corner of a box using:
+	</p>
+	
+	<ul class="box">
+	  <li>border-top-right-radius</li>
+	  <li>border-top-left-radius</li>
+	  <li>border-bottom-right-radius</li>
+	  <li>border-bottom-left-radius</li>
+	  <li>border-radius: a shorthand for the property.
+	</ul>
+	
+	<p>
+	  You can also use border-radius to create some crazy ass border shapes but that's not really too important right meow.  Come back later and check it out for some super fun time!
+	</p>
+
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	 <h2 id="chp14">Lists, Tables, and Forms</h2>
+
+	  <p>
+	    There are several CSS properties that were create dto work with specific types of HTML elements, such as lists, tables, and forms.  In this chapter I'll learn to:
+	  </p>
+	  
+	  <ul>
+	    <li>Specify the type of bulet points or numbering on lists</li>
+		<li>Add borders and backgrounds to table cells</li>
+		<li>Control the appearance of form controls</li>
+	  </ul>
+	  
+	  <p>Together, what I learn will allow me to take finer control over specific parts of my pages</p>
+	
+	<h3>Bullet Points Styles</h3>
+	
+	<p>The 'list-style-type' property allows you to control the shape or style of a bullet point (AKA a marker).  It can only be used on the &lt;ol&gt;, &lt;ul&gt;, and &lt;li&gt; elements.</p>
+	
+	<h4>Unordered lists</h4>
+	
+	<p>
+	  Unordered lists can accept the following values:
+	</p>
+	  <ul>
+	    <li>none</li>
+		<li>disc</li>
+		<li>circle</li>
+		<li>square</li>
+	  </ul>
+	
+	
+	<h4>Ordered Lists</h4>
+	
+	<p>
+	  Ordered lists can use the following values:
+	</p>
+	
+	<ol>
+	  <li>decimal</li>
+	  <li>decimal-leading-zero</li>
+	  <li>lower-alpha</li>
+	  <li>upper-alpha</li>
+	  <li>lower-roman</li>
+	  <li>upper-roman</li>
+	</ol>
+	
+	<h3><span class="practiceThis">Images for Bullets</span></h3>
+	
+	<p>
+	  You can also specify images t oset as a bullet point using the 'list-style-image' property.  The value starts with the letters 'url' and is followed by a pair of parentheses.  Inside the parens, the path to the image is given inside double quotes.
+	</p>
+	
+	<h3><span class="practiceThis">Positioning the Marker</span></h3>
+	
+	<p>
+	  Lists are indented into the page by default and the 'list-style-position' indicates whether the marker should appear on the inside or the outside of the box containing the main points.  It can take one of two values: 'outside' and 'inside'
+	</p>
+	
+	<ul class="markerPosition">
+	  <li>l;alskdjfasl;kdfj;aslkdfj;laskdjf;aslkdjfasl;dkfjasl;dkfjasl;dk</li>
+	  <li>asldkfja;lsdkfj;aslkdfjas;ldkfjasl;dkfjasl;dkfjasl;dkfjaskdl;fjaskdlf</li>
+	</ul>
+	
+	<h3><span class="practiceThis">List Shorthand</span></h3>
+	
+	<p>
+	  As with several other properties in CSS, there is a shorthand to combines some of the properties we just saw.  For list styles it is 'list-style' and it allows you to express the markers style, image, and position in any order.
+	</p>
+	
+	
+	<table>
+	  <tr>
+		<th>Athlete Name</th>
+		<th>Sport</th>
+		<th>Card Year</th>
+		<th>Price Sold</th>
+	  </tr>
+	  <tr class="even">
+	    <td>Wayne Gretzky</td>
+		<td>Ice Hockey</td>
+		<td class="year">1979</td>
+		<td class="priceSold">$94,162</td>
+	  </tr>
+	  <tr> 
+	    <td>Michael Jordan</td>
+		<td>Basketball</td>
+		<td class="year">1986-87</td>
+		<td class="priceSold">$10000</td>
+	  </tr>
+	  <tr class="even">
+        <td>Albert G. Spalding</td>
+		<td>Baseball</td>
+		<td class="year">1888</td>
+		<td class="priceSold">$120000</td>
+	  </tr>
+	  <tr>
+	    <td>Ernie Banks</td>
+		<td>Baseball</td>
+		<td class="year">1954</td>
+		<td class="priceSold">$142,836</td>
+	  </tr>
+	  
+	</table>
+	
+	<p>
+	  There table above is easy to read because of several design tips that I employed.  They are a good rule of thumb to make all your tables readable.
+	</p>
+	
+	<ul>
+	  <li>Give table cells padding to improve readability</li>
+	  <li>Add style to your headers to distinguish them from the table</li>
+	  <li>Shading alternate rows helps users follow along.  Using subtle color distinction helps keep the table looking clean</li>
+	  <li>Alighning numbres to the right helps clearly distinguish larger numbers from smaller ones.</li>
+	  <li>Go online to find more examples for styling tables</li>
+	</ul>
+	
+	<h3><span class="practiceThis">Border on Empty Cells</span></h3>
+	
+	<p>
+	  IF you hav eempty cells in your table, then you can use the 'empty-cells' property to specify whether or not their borders should be shown. Browsers treat empty cells different ways so if you consistency then use this property.  
+	</p>
+	
+	<p>
+	  It can take one of three values: show, hide, or inherit.
+	</p>
+	
+	<table class="emptyBorder">
+		<tr>
+		  <td>1</td>
+		  <td>2</td>
+		</tr>
+		<tr>
+		  <td>3</td>
+		  <td></td>
+		</tr>
+	</table>
+	
+	<h3>Gaps Between Cells</h3>
+	
+	<p>
+	  The 'border-spacing' property allows you to control the distance between adjacent cells.  By default browsers often leave a small space between cells, so if you want to increase or decrease this space use this property.  Its value is normally specified in pixels.  You can specify two numbers if you want to control horizontal and vertical spacing.
+	</p>
+	
+	<p>
+	  When a border has been used on table cells, where two cells meet, the width of lines woulbe be twice that of the outside edges of the table.  To collapse adjacent borders and stylize your table to have uniform border widths you can use the 'border-collapse' property.  It takes two values: collapse and seperate (border-spacing and empty-cells rules are obeyed)
+	</p>
+	
+	<h3>Styling Forms</h3>
+	
+	<p>
+	  People are more likely to fill out forms online if they look attractive and easier to use.  Also, when you come to look at a form in a few different browsers, you will see that each browsers displays it differently.  CSS is commonly used to control the apperance of form elements.
+	</p>
+	
+	<div>
+	  <p>It is most common to style:</p>
+	  <ul>
+	    <li>Text inputs and text areas</li>
+		<li>Submit buttons</li>
+		<li>Labels on forms, to get the form controls to align nicely</li>
+	  </ul>
+	</div>
+	
+	<h3>Styling Text Inputs</h3>
+	
+	<p>
+	  This example demonstrates the CSS properties commonly used with text inputs, most of which you have already met.
+	</p>
+	
+	<fieldset>
+	<legend>Stylish Contact Info</legend>
+	<form class="styledInputs"action="http://www.example.com/submit.php">
+		<input type="text" name="email" id="email" />
+		<input type="text" name="twitter" id="twitter" />
+		<input type="text" name="website" id="website" />
+	</form>
+	</fieldset>
+	
+	<p>
+	  You will learn more about background images and how to position them in Chapter 16.
+	</p>
+	
+	<h3>Styling Submit Buttons</h3>
+	
+	<p>
+	  Here are some properties that can be used to style submit buttons. This example builds on the one in the previus page so the submit button inherits the styles you set for the &lt;input&gt; elements.
+	</p>
+	
+	<form class="styledInputs" action="http://www.example.com/button.php">
+		<input type="submit" id="styledButton" value="Submit" />
+	</form>
+	
+	<p>
+	  You could add a color gradient to the button like it does in the book but we'll come across that later in chapter 16.
+	</p>
+	
+	<h3>Syling Fieldsets & Legends</h3>
+	
+	<p>
+      Fieldsets are particularly helpful in determining the edges of a form.  In a long form they can help group together related information within it. The legend is used to indicate what information is required in the fieldset.
+	</p>
+	
+	<h3>Aligning Form Controls: Problem &amp; Solution</h3>
+	
+	<p>
+	  Refer to 345-346 for a lesson on aligning form controls.
+	</p>
+	
+	<h3>Cursor Styles</h3>
+	
+	<p>
+	  The 'cursor' property allows you to control the type of mouse cursor that should be displayed to users. For example, on a link you might set the cursor to be a hand when the user hovers over it.  Here are the most commonly used values for this property:
+	</p>
+	
+	<ul>
+	  <li>auto</li>
+	  <li>crosshair</li>
+	  <li>default</li>
+	  <li>pointer</li>
+	  <li>move</li>
+	  <li>text</li>
+	  <li>wait</li>
+	  <li>help</li>
+	  <li>url("specify whatever you want")</li>
+	</ul>
+	
+	<p>
+		<a href="#top">Top</a>
+	</p>
+	
+	<h2 id="chp15">Chapter 15: Layout</h2>
+	
+	<p>
+	  As you already know, CSS treats HTML elements as if it is in its own box. This box will either be a block-level box or an inline box.  If one block-level element is inside another block-level element then the outer box is known as the <b>containing</b> or <b>parent</b> element.  
+	</p>
+	
+	<p>
+	  It is common to group a number of elements together inside a &lt;div&gt; element.  For example, you might group together all of the element that form the header of a site.  This would make the &lt;div&gt; element the containing element for all the elements within it.
+	</p>
+	
+	<div>
+	  <img src="images/layoutImage.png" alt="An image showing how layout works" />
+	  
+	  <p>
+	    The orange lines in the above diagram depresent &lt;div&gt; elements.  The header (containing the logo and navigation) are in one &lt;div&gt; element, the main content of the page is in another, and the footer is in a third.  The &lt;body&gt; element is the containing element for these three &lt;div&gt; elements.  
+	  </p>
+	</div>
+	
+	<h3>Controlling the Position of Elements</h3>
+	
+	<p>
+	  CSS has the following <span class="important">positioning schemes</span>that allow you to control the layout of a page: normal flow, relative positioning, and absolute positioning.  You specify the positioning scheme using the 'position' property in CSS. You can also folat elements using the 'float' property.
+	</p>
+	
+	<h4>Normal Flow</h4>
+	
+	<div>
+		<img src="images/normalFlow.png" alt="Example of Normal Flow" title="Looks Pretty Normal!" />
+	</div>
+	
+	<p>
+	  Every block-levelelement appears on a new line, causing each item to appear lower down the page than the pervious one.  Even if you specify the width of the boxes and there is space for two elements to sit side-by-side, they will not appear next to each other.  This is the default behavior (unless you tell the browsers to do something else).
+	</p>
+	
+	<h4>Relative Positioning</h4>
+	
+	<div>
+		<img src="images/relativePositioning.png" alt="Example of Relative Positioning" title="An Example of Relative Positioning" />
+	</div>
+	
+	<p>
+	  This moves an element from the position it would be in normal flow, shifting it to the top, right, bottom, or left of where it would have been place. The second paragraph has been pushed down and right from where it would otherwise have been in normal flow.<span class="important">This does not affect the position of surrounding elements;</span> they stay in the position they would be in normal flow.
+	</p>
+	
+	<h4>Absolute Positioning</h4>
+	
+	<div>
+		<img src="images/absolutePositioning.png" alt="Example of Absolute Positioning" title="An Example of Relative Positioning" />
+	</div>
+	
+	<p>
+	  This position the element in relation to its containing elements. It is taken out of normal flow, meaning that it does not affect the position of any surrounding elements (as they simply ignore the space it would have taken up.)  Absolutely positioned elements move as users scroll up and down the page. 
+	</p>
+	
+	<h4>Fixed Positioning</h4>
+	
+	<div>
+		<img src="images/fixedPositioning.png" alt="An Example of Fixed Positioning" title="An Example of Fixed Positioning" />
+	</div>
+	
+	<p>
+	  A form of absolute positioning, fixed positioning places the element in relation to the browser window, as opposed to the containing element. Elements with fixed positioning do not affect the position of surrounding elements and they do not move when the user scrolls up or down the page.
+	</p>
+	
+	<h4>Floating Elements</h4>
+	
+	<div>
+	
+	<img class="floatLeft" src="images/floatingElements.png" alt="An Example of Floating Elements" title="An Example of Floating Elements" />
+ 	<p>
+	  Floating an elements allows you to take that element out of normal flow and psotion it to the far left or right of a containing box.  THe floated element becomes a block-level element around which other content can flow.
+	</p>
+	
+	</div>
+	
+	<!--<p class="clearLeft">
+		adsfasdfasdfasfdsadf
+	</p>
+	-->
+	<h3 class="clearLeft">Normal Flow</h3>
+	
+	<p>
+	In normal flow, each block-level element sits on top of the next one. Since this is the default way in which browseres treat HTML elements, you do not need a CSS property to indicate that elements should appear in normal flow, but the syntax would be using a property of 'position' with a value of 'static'
+	</p>
+	
+	<h3>Relative Positioning</h3>
+	
+	<p id="relative">
+	  Relative positioning moves an elements in relation to where it would have been in normal flow.  For example, you can move it 10 pixels lower that it would have been in normal flow or 20% to the right.
+	</p>
+	
+	<p>
+	  You can indicate that an element shoud be relatively positioned using the 'position' property with a value of 'relative'.  You then use the offset propertires ('top' or 'bottom' and 'left' or 'right') to dinciate how far to move the element from where it would have been in normal flow. Values of offset are usually given in pixels or ems.
+	</p>
+	
+	
+	<h3 id="absolute">Absolute Positioning</h3>
+	
+	<p id="absoluteBox">
+	  When the 'position' property is given a value of 'absolute', the box is takene out of normal flow and no longer affects the psotion of other elements on the page. (The other elements simply act like it is not present).  The same offset properties can be used to specify where the element should appear in relation to its containing element.
+	</p>
+	
+	<p>
+	  By default most browsers add a margin to the top of the &lt;h1&gt; element.  This is why there is a gap between the top of the browser and the box containing the &lt;h1&gt; element.  If you want to remove the margin you must specify it in CSS.
+	</p>
+	
+	<h3>Fixed Positioning</h3>
+	
+	<p>
+	  Fixed positioning is a type of absolute positioning that requires the 'position' property to have a value of 'fixed'.  It postions the element in relation to the browser window. Therefore, it would stay in its place when the user scrolls up or down.
+	</p>
+	
+	<h3>Overlapping Elements</h3>
+	
+	<p>
+	  When you use relative, fixed, or absolute positioning, boxes can overlap. If they do, the elements that appear later in the HTML code sit on top of those that are earlier in the page.  If you want to control which element sits on top, you can use the 'z-index' property.  
+	</p>
+	
+	<p>
+	  The value for 'z-index' is a number, and the higher the number the closer that element is to the front/top. It is sometimes reffered to as the stacking property.
+	</p>
+	
+	<h3>Floating Elements</h3>
+	
+	<p>
+	  The 'float' property allows you to take an element in normal flow and place it as far to the left or right of the containing element as possible.  Anything else that sits inside the containing element will flow around the element that is floated.
+	</p>
+	
+	<p>
+	  When you use the float property, it is also important to set the 'width' to indicate how wide the element should be.  Otherwise, the box is likely to take the full width of the containing element like it would in normal flow.
+	</p>
+	
+	<h3>Using Float to Place Elements Side-By-Side</h3>
+	
+	<p>
+	  A lot of layouts place boxes next to each other.  The 'float' property is commonly used to achieve this. When elements are floated, the height of the boxes can affect where the following elements sit.
+	</p>
+	
+	<p>
+	  Setting the height of the paragraphs to be the same height as the tallest paragraph would solve this issue.  But it is rarely suited to real word designs where the amount of text in a paragraph or column may vary.  It is more common to use the clear property.
+	</p>
+	
+	<h3>Clearing Floats</h3>
+	
+	<p>
+	  The 'clear' property allows you to say that no element (within the containing element) should touch the left or right-hand sides of a box.  It can take the following values:
+	</p>
+	
+	<dl>
+	  <dt>left</dt>
+	    <dd>The left-hand side of the box should not touch any other elements appearing in the same containing element. </dd>
+	  <dt>right</dt>
+	    <dd>The right-hand side of the box will not touch elements appearing in the same containing element</dd>
+	  <dt>both</dt>
+	    <dd>Neither the left nor right-hand sides of the box will touch elements appearning in the same containing element.</dd>
+	  <dt>none</dt>
+	    <dd>Elements can touch either side</dd>
+	</dl>
+	
+	<div id="lipsum">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget ultricies lacus. Sed ultrices ipsum eget purus eleifend rutrum. Etiam rutrum augue eget leo semper suscipit quis id libero. Morbi aliquet, urna non porta suscipit, eros arcu sagittis dui, et blandit lectus nibh eu augue. Fusce elementum, lectus sed lacinia egestas, libero sem molestie odio, in vulputate enim libero id felis. Vestibulum euismod lectus eget convallis faucibus. Proin feugiat enim condimentum lobortis maximus. Nam eleifend et nulla nec congue. Aliquam eu enim vel dui gravida posuere. Cras id efficitur mauris, id consequat magna. Curabitur sit amet luctus velit. Maecenas rhoncus leo ligula, et faucibus nulla vehicula ut. Duis a finibus tortor.
+</p>
+<p>
+Maecenas massa est, pharetra vitae risus dignissim, vehicula vehicula sapien. Aliquam vestibulum non sapien at congue. Pellentesque fermentum nulla id arcu aliquam imperdiet. Maecenas sit amet arcu dignissim, sagittis elit eget, blandit mauris. Aenean quam magna, elementum sed odio ac, malesuada varius tellus. Suspendisse eu mattis tortor. Cras commodo nisl nec mauris elementum, a sagittis neque eleifend. Cras ac lorem sed neque efficitur ultrices.
+</p>
+<p>
+Maecenas tincidunt malesuada ligula, id vestibulum nibh mollis eget. Mauris libero elit, tempus eu orci sed, ornare viverra diam. Praesent sed odio consequat lacus ornare blandit. Quisque tempus ipsum eget est cursus, non blandit dui ullamcorper. Nunc iaculis enim aliquet molestie ultrices. Integer cursus felis sit amet mollis malesuada. Vestibulum eget sapien malesuada, tincidunt turpis eget, pretium arcu. Phasellus laoreet metus et tortor sagittis ultricies. Praesent condimentum semper turpis id finibus. Aliquam fringilla nec turpis eget pretium. Ut sed quam rhoncus, imperdiet quam in, porttitor dolor. Suspendisse porttitor auctor sem, ut porttitor metus viverra vitae.
+</p>
+<p id="fourthClear">
+In porta nulla ut purus fermentum, nec hendrerit lectus porta. Integer tempus facilisis diam sit amet varius. Suspendisse varius rutrum erat, sit amet bibendum nisl porttitor eu. Aliquam lacinia massa eu congue luctus. Etiam ligula neque, gravida gravida tristique nec, aliquet nec nibh. Cras nunc felis, vestibulum eget nisi ac, commodo porttitor urna. Etiam hendrerit ullamcorper arcu, sed volutpat neque efficitur eget. In sagittis et augue sit amet finibus. Ut commodo elit et leo mollis, in faucibus mauris iaculis. Mauris at dapibus justo. Suspendisse felis neque, cursus sed rutrum in, commodo lacinia sem. Praesent iaculis orci non velit cursus, et rutrum enim elementum. Cras quis fermentum erat, a placerat eros. Nam cursus quis mauris sit amet interdum.
+</p>
+<p>
+Praesent tristique odio quis pharetra ullamcorper. Ut sed ante eu leo semper fermentum. Morbi erat urna, euismod vitae massa eu, ornare lacinia lorem. Phasellus consequat eros tortor, sit amet accumsan tortor luctus quis. Sed vestibulum nunc in augue facilisis, at varius justo imperdiet. Mauris mattis auctor ipsum et pharetra. Quisque et aliquam dui. Maecenas elit nisl, tincidunt eu bibendum ac, ultrices blandit ante.
+</p>
+<p>
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum eros placerat maximus lobortis. Mauris sed efficitur massa. Nullam nibh justo, eleifend sed odio quis, varius laoreet nunc. Maecenas finibus, lacus non sodales scelerisque, tellus metus porta turpis, vitae fermentum orci erat vel ante. Integer sit amet hendrerit nunc. Curabitur ultrices felis sit amet arcu rutrum, sit amet hendrerit justo cursus. Proin at erat mattis, iaculis elit ac, gravida nunc. Vestibulum metus sem, eleifend vitae hendrerit sed, mattis a felis.
+</p>
+</div>
+	
+	<h3>Parents of Floated Elements: Problem</h3>
+	
+	<p>
+	  If a containing element only contains floated elements, some browsers will treat it as if it is zero pixels tall.  As you can see above, the 2 pixel border I assigned to the containing div has collapsed, so the box looks like a 4px line.
+	</p>
+	
+	<p>
+	  Traditionally an extra HTML element was added after the last floated box and then a CSS rule would be applied.  This worked fine but it meant you had to add another HTML element not for the purpose of content but as a workaround.  More recently, developers have opted for a purely CSS-based solution.  It involves adding two CSS rules to the containing element of the floated elements:
+	</p>
+
+	<ul>
+	  <li>The 'overflow' property is given a value 'auto'</li>
+	  <li>The 'width' property is set to 100%</li>
+	</ul>
+	
+	<div class="mainContainer">
+	<div class="sideCol">
+	<h3>Creating Multi-Column Layouts with Floats</h3>
+
+	<p>
+	  Many web pages use multiple columns in their design. This is achieved by using a &lt;div&gt; element to represent each column.  The following three CSS properties are used to position the clumns next to each other:
+	</p>
+
+ 	<ul>
+	  <li>width</li>
+	  <li>float</li>
+	  <li>margin</li>  
+ 	</ul>  
+
+ 	<p>
+	  Similarly, a three column layout could be created by floating &lt;div&gt; elements next to each other.  You just have to make sure to get the widths right so that they all fit.  
+ 	</p>
+	</div>
+
+	<div class="mainCol">
+		<p>
+			In porta nulla ut purus fermentum, nec hendrerit lectus porta. Integer tempus facilisis diam sit amet varius. Suspendisse varius rutrum erat, sit amet bibendum nisl porttitor eu. Aliquam lacinia massa eu congue luctus. Etiam ligula neque, gravida gravida tristique nec, aliquet nec nibh. Cras nunc felis, vestibulum eget nisi ac, commodo porttitor urna. Etiam hendrerit ullamcorper arcu, sed volutpat neque efficitur eget. In sagittis et augue sit amet finibus. Ut commodo elit et leo mollis, in faucibus mauris iaculis. Mauris at dapibus justo. Suspendisse felis neque, cursus sed rutrum in, commodo lacinia sem. Praesent iaculis orci non velit cursus, et rutrum enim elementum. Cras quis fermentum erat, a placerat eros. Nam cursus quis mauris sit amet interdum.
+		</p>
+		<p>
+			Praesent tristique odio quis pharetra ullamcorper. Ut sed ante eu leo semper fermentum. Morbi erat urna, euismod vitae massa eu, ornare lacinia lorem. Phasellus consequat eros tortor, sit amet accumsan tortor luctus quis. Sed vestibulum nunc in augue facilisis, at varius justo imperdiet. Mauris mattis auctor ipsum et pharetra. Quisque et aliquam dui. Maecenas elit nisl, tincidunt eu bibendum ac, ultrices blandit ante.
+		</p>
+		<p>
+			Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla interdum eros placerat maximus lobortis. Mauris sed efficitur massa. Nullam nibh justo, eleifend sed odio quis, varius laoreet nunc. Maecenas finibus, lacus non sodales scelerisque, tellus metus porta turpis, vitae fermentum orci erat vel ante. Integer sit amet hendrerit nunc. Curabitur ultrices felis sit amet arcu rutrum, sit amet hendrerit justo cursus. Proin at erat mattis, iaculis elit ac, gravida nunc. Vestibulum metus sem, eleifend vitae hendrerit sed, mattis a felis.
+		</p>
+	</div>
+	
+
+
+
+	<h3> Screen Sizes, Resolution, and Page Size</h3>
+
+		<p>
+ 		  Different visitors to your site will have different size screens that show different amounts of information, so your design neds to be able to work on a range of different sized screens.  Screen size is important because it affects how big or small a user can make their windows and how much of the page they will see.
+		</p>
+
+		<p>	
+		  Resolution refers to the number of dats a screen shows per inch. Some devices have a higher resolution than desktop computers and most OS allow users to adjust the resolution of their screens. It is interesting to note that the higher resolution the smaller the text appears.  Many mobile devices have screens that are higher resolutions than desktops.
+		</p>  
+
+		<p>
+		  Because screen sizes and display resolutions vary so much, web designers often try to create pages of around 960-1000 pixels wide.  Judging the height that people are likely to see on the screen without scrolling down the page is much harger.  Many designers used to assume that usrs would see the top 570-600 pixels of a page without scrolling, which used to be referred to as "above the fold".  However as desktop screens have increased and mobile devices have become popular, the area users see is far more variable. Many usability studies have shown that a user is able to judge a website relevance in under a minute so it is important to communicate what the site is about at the top.  But make sure to avoid clutter.  
+		</p>
+
+	
+	<div class="sideCol">	
+		<h3>Fixed Width Layouts</h3>
+	
+		<p>Fixed width layout designs do not change size as the user increases or decreases the size of their browsers window.  Measurements tend to be given in pixels.
+		</p>
+	<img id="fixedImage" src="images/fixedWidthLayout.png" alt="A diagram showing a fixed width layout" title="A Diagram Showing a Fixed Width Layout" />
+	</div>	
+
+	<div class="mainCol">
+		<h4>Advantages</h4>
+		<ul>
+			<li>Pixel values are accurate at controlling the size and position of elements</li>
+			<li>The designer has far greater control over the apperance and position of items on the page than with liquid layouts</li>
+			<li>The size of an image will always remain the same relative to the rest of the page</li>
+		</ul>
+	
+		<h4>Disadvantages</h4>
+		<ul>
+			<li>You can end up with big gaps around the edge of a page</li>
+			<li>If the user's screen is a much higher resolution than the designer's screen, the 
+			page can look smaller and text can be harder to read</li>
+			<li>If auser increases font sizes, text might not fit into the allotted spaces</li>
+			<li>The design works best on devices that have a site or resolution similar to that of desktop or laptop computers</li>
+			<li>The page will often take up more vertical space than a liquid layout with the same content</li>
+		</ul>
+	</div>
+	
+
+	
+
+
+	<div class="sideCol">
+	<h3>Liquid Layouts</h3> 
+		<p>Liquid layout designs stretch and contract as the users increases or decreases the size of their browser window. They tend to user percentages.
+		</p>
+		<img src="images/liquidLayout.png" alt="A diagram showing a fixed width layout" title="A Diagram Showing a Fixed Width Layout" />
+	</div>
+
+<div class="mainCol">
+		<div class="col1">
+			<h4>Advantages</h4>
+			<ul>
+				<li>Pages will expand to fill the enitre browser window so there are no spaces around the page on a large screen.</li>
+				<li>If the user has a small window, the page can contract to fit it without the user have to scroll to the side</li>
+				<li>The design is tolerant of users setting font sizes larger than the designer intended because the page can stretch</li>
+			</ul>
+		</div>
+
+		<div class="col2">
+			<h4>Disadvantages</h4>
+			<ul>
+				<li>If you do not control the width of sections of the page then the design can look very different than you inteded, with unexpected gaps around certain elements or items squashed together</li>
+				<li>If the user has a wide window, lines of text can become very long, which makes them harder to read</li>
+				<li>If the user has a very narrow window, words may be squashed and you can end up with few words on each line</li>
+				<li>If a fixed width item (like an image) is in a box that is too small to hold it (because the user has made the window smaller) the image can overflow over the text</li>
+			</ul>
+		</div>	
+	</div>
+
+	
+	</div>
+
+
+	<h3 id="specialClear">CSS for a Fixed Width Layout</h3>
+
+	<p><span class="important">Please refer to the following link for <a href="../html-and-css-book-code-0915/chapter-15/fixed-width-layout.html">a visual example of a fixed width layout</a></span></p>
+
+	<p>To create a fixed width layout, the width of the main boxes on a page will usually be specified in pixels (and sometimes their height, too).  As you can see by the source the width of the &lt;body&gt; element is set to 960px and it is centerered by setting the left and right margins to auto (written using a shorthand syntax).  Each of the main boxes on the page has a margin of 10px to provide spacing between each major section.</p>	
+
+	<p>The navigation, feature, and footer panels stretch to the width of the containing element (which in this isntance is the &lt;body&gt; element), so we do not need to specify a width for them. The three columns are each 300 pixels wide and use the float property, which allows them to sit next to each other. <span class="important">Sometimes an extra HTML element is used to contain the page, rather than fixing the width of the &lt;body&gt;. This allows the background of the browser window to have a different color than the background of the content.</span></p>
+
+	<h3>CSS for a Liquid Layout</h3>
+
+	<p><span class="important">Please refer to the following link for <a href="../html-and-css-book-code-0915/chapter-15/liquid-layout.html">a visual example of a liquid layout</a></span></p>
+
+	<p>
+	Liquid layout uses percentages to specify the width of each box so that the design will stretch to fit the size of the screen. There is a rule on the &lt;body&gt; element to set the width of the page to 90%, leaving space between the left and right-hand sides of the browser window and the main content.  The three columns are all given a margin of 1&#37; and a width of 31.3&#37; which adds up to 99.9&#37; of the width of the &lt;body&gt; element.  
+	</p>
+
+	<p>
+	The &lt;div&gt; elements that hold the navigation, feature and footer will stretch to fill the width of the containing &lt;body&gt; element.  They are given a 1&#37; margin to help them align to the columns. If you imagine the browser window to be very wide or very narrow, you can see how lines of text could become very long or very short. This is where the 'min-width' and 'max-width' properties help create boundaries within which the layout can stretch.	
+	</p>
+
+	<h3>Layout Grids</h3>
+
+	<p>
+		Composition in any visual art is the placement or arrangement of visual elements -- how they are organized on a page. Many designers use a grid structure to help them position items on a page, and the same is true for web designers.  If you look at the <a href="images/960pixelGrid.png" alt="960PixelGrid" title="A newspaper webpage with superimposed lines that show the 960 pixel grid layout">grid on page 387</a> you can see a set of superimposed thick vertical lines over the top of a newspaper website to show you how the page was designed according to a grid.  This grid is called the <b>960 pixel grid</b> and is widely used by web designers.
+	</p>
+
+	<p>
+	Grids set consistent proportions and spaces between items which helps create a professional looking design. As you will see, it is possible to create many different layouts using this one versatile grid. While a grid might seem like a restriction in actual fact it:
+	</p>
+
+	<ul>
+		<li>Creates a continuity between different pages which may use different designs</li>
+		<li>Helps users predict where to find information on various pages</li>
+		<li>Makes it easier to add new content to the site in a consistent way</li>
+		<li>Helps people collaborate on the design of a site in a consistent way</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="clearLeft">
+		<a href="#top">Top</a>
+	</div>
+	
+	</body>
+</html>	
